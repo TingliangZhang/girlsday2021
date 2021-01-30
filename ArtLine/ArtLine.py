@@ -47,17 +47,18 @@ class FeatureLoss(nn.Module):
     
     def __del__(self): self.hooks.remove()
 
-MODEL_URL = "https://www.dropbox.com/s/starqc9qd2e1lg1/ArtLine_650.pkl?dl=1"
-urllib.request.urlretrieve(MODEL_URL, "ArtLine_650.pkl")
+# MODEL_URL = "https://www.dropbox.com/s/starqc9qd2e1lg1/ArtLine_650.pkl?dl=1"
+# urllib.request.urlretrieve(MODEL_URL, "ArtLine_650.pkl")
 path = Path(".")
 learn=load_learner(path, 'ArtLine_650.pkl')
 
 
 
-url = 'https://wallpapercave.com/wp/wp2504860.jpg' #@param {type:"string"}
+# url = 'https://wallpapercave.com/wp/wp2504860.jpg' #@param {type:"string"}
 
-response = requests.get(url)
-img = PIL.Image.open(BytesIO(response.content)).convert("RGB")
+# response = requests.get(url)
+
+img = PIL.Image.open("cai.jpg").convert("RGB")
 img_t = T.ToTensor()(img)
 img_fast = Image(img_t)
 show_image(img_fast, figsize=(8,8), interpolation='nearest');
