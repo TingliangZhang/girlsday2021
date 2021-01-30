@@ -27,7 +27,7 @@ CV算法生成简笔画头像
 
 [ArtLine](https://github.com/vijishmadhavan/ArtLine)
 
-
+运行环境：[Colab](https://colab.research.google.com/github/vijishmadhavan/Light-Up/blob/master/ArtLine.ipynb)
 
 ## 芯片选型
 
