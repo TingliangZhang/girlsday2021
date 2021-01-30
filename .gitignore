@@ -1,0 +1,7 @@
+*.sch-bak
+*.kicad_pcb-bak
+*.gbr
+*.drl
+*.gbrjob
+*.dcm
+CardV1/fp-info-cache
