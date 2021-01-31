@@ -44,3 +44,23 @@ img = PIL.Image.open("cai.jpg").convert("RGB")
 NXP NTAG
 
 https://www.themobileknowledge.com/wp-content/uploads/2018/07/02-Webinar-slies-Antenna-design-for-NTAG-I2C-plus.pdf
+
+
+
+ST25 Dynamic NFC Tags
+
+https://www.st.com/en/nfc/st25-dynamic-nfc-tags.html
+
+ST25DV04K
+
+https://www.st.com/en/nfc/m24lr04e-r.html#overview
+
+[M24LR04E-RMN6T/2](https://item.szlcsc.com/168717.html)[射频卡芯片](https://list.szlcsc.com/catalog/981.html)
+
+测试板：[M24LR-DISCOVERY](https://www.st.com/en/evaluation-tools/m24lr-discovery.html)
+
+## NFC线圈
+
+NFC Antenna Generator
+
+https://kbeckmann.github.io/2016/06/19/NFC-Antenna-Generator/
