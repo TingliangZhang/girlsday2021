@@ -69,10 +69,41 @@ https://www.st.com/en/nfc/m24lr04e-r.html#overview
 
 [X-NUCLEO-NFC02A1](https://www.st.com/en/ecosystems/x-nucleo-nfc02a1.html)
 
-## NFC线圈
+## NFC线圈设计
 
 NFC Antenna Generator
 
 https://kbeckmann.github.io/2016/06/19/NFC-Antenna-Generator/
 
 [NFC Antenna Design | RF Design | eDesignSuite](https://eds.st.com/antenna/)
+
+参数计算：
+
+主要参考AN2866 -  Antenna design procedure
+
+Internal tuning capacitor in ST25DV04K SO8N(f = 13.56 MHz) $C_{TUN} = 28.5 pF$
+
+计算公式：$L_{A} C_{S} \omega^{2}=1$
+
+具体推导：
+$$
+L_{A}=\frac{1}{4 \pi^{2} f^{2} C_{S}}
+$$
+
+$$
+L_{A}=\frac{1}{4*3.14^{2}*13.56^{2}*28.5}=4.84uH
+$$
+
+谐振理论：
+
+At low frequencies $\left(f<f_{\text {self res }} / 10\right),$ the stray capacitance $C_{\text {ant }}$ is negligible, $L_{A}=L_{\text {ant }}$ and the antenna reactance is given by $X_{A}=j L_{\text {ant }} \omega$.
+At $13.56 \mathrm{MHz}, \mathrm{C}_{\text {ant }}$ value gets in the range of some $\mathrm{pF}$ and $\mathrm{L}_{\mathrm{A}}>\mathrm{L}_{\text {ant }}$.
+
+The antenna impedance is $Z_{\text {ant }}=R_{A}+j L_{A} \omega$.
+
+The NFC / RFID chip impedance is $Z_{S}=R_{s}+j / C_{S} \omega$.
+
+For the equivalent RLC circuit, the total impedance is $Z_{\text {tot }}=Z_{\text {ant }}+Z_{s}$ and the resonant frequency is given by the condition $L_{A} C_{S} \omega^{2}=1$.
+Optimum antenna tuning
+
+At resonant frequency the total impedance reaches its minimum value $Z_{\text {tot }}=R_{A}+R_{S}$. The current in the antenna and the voltage delivered to the NFC / RFID chip are maximized, as the energy transferred to the device.
