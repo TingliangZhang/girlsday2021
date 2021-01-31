@@ -133,3 +133,5 @@ Equivalent Inductance@13.56 Mhz = 4.98 µH
 考虑到布线过程中的寄生电容等，接近4.84 µH，可以接受这一设计。
 
 ![image-20210131215223753](image-20210131215223753.png)
+
+封装库画六圈螺线太难了，准备用dxf导入，先使用Adobe Illustrate绘制
