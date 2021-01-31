@@ -77,7 +77,9 @@ https://kbeckmann.github.io/2016/06/19/NFC-Antenna-Generator/
 
 [NFC Antenna Design | RF Design | eDesignSuite](https://eds.st.com/antenna/)
 
-参数计算：
+
+
+电路中天线电感计算计算：
 
 主要参考AN2866 -  Antenna design procedure
 
@@ -107,3 +109,10 @@ For the equivalent RLC circuit, the total impedance is $Z_{\text {tot }}=Z_{\tex
 Optimum antenna tuning
 
 At resonant frequency the total impedance reaches its minimum value $Z_{\text {tot }}=R_{A}+R_{S}$. The current in the antenna and the voltage delivered to the NFC / RFID chip are maximized, as the energy transferred to the device.
+
+
+
+物理天线电感
+
+嘉立创PCB成品外层铜厚1oz~2oz(35um~70um)选择35um
+
