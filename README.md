@@ -29,6 +29,16 @@ CV算法生成简笔画头像
 
 运行环境：[Colab](https://colab.research.google.com/github/vijishmadhavan/Light-Up/blob/master/ArtLine.ipynb)
 
+CoLab中图片拖到根目录去上传，之后导入：
+
+```python
+img = PIL.Image.open("cai.jpg").convert("RGB")
+```
+
+[U-2-Net](https://github.com/NathanUA/U-2-Net)还有其前身[APDrawingGAN](https://github.com/yiranran/APDrawingGAN)
+
+
+
 ## 芯片选型
 
 NXP NTAG
