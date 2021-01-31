@@ -46,4 +46,15 @@ F 3 "~" H 6550 2200 50  0001 C CNN
 	1    6550 2200
 	1    0    0    -1  
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H?
+U 1 1 6016354E
+P 4150 2450
+F 0 "H?" H 4250 2499 50  0000 L CNN
+F 1 "MountingHole_Pad" H 4250 2408 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_ISO7380_Pad" H 4150 2450 50  0001 C CNN
+F 3 "~" H 4150 2450 50  0001 C CNN
+	1    4150 2450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
