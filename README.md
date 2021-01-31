@@ -134,4 +134,12 @@ Equivalent Inductance@13.56 Mhz = 4.98 µH
 
 ![image-20210131215223753](image-20210131215223753.png)
 
+
+
+动态NFC天线计算主要参考 AN2972 How to design an antenna for dynamic NFC tags 
+
+
+
+
+
 封装库画六圈螺线太难了，准备用dxf导入，先使用Adobe Illustrate绘制
