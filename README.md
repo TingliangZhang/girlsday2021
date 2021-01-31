@@ -116,3 +116,20 @@ At resonant frequency the total impedance reaches its minimum value $Z_{\text {t
 
 嘉立创PCB成品外层铜厚1oz~2oz(35um~70um)选择35um
 
+单片出货，走线和焊盘距板边距离≥0.2mm，否则可能涉及到板内的线路及焊盘。
+
+直接留3.18mm边缘。
+
+最小线隙，多层板3.5mil 单双面板5mil (1mil=1/1000inch=0.0254mm)
+
+Antenna Length =  85.60 - 3.18x2 = 79.24 mm
+
+Antenna Width = 53.98 - 3.18x2 = 47.62 mm
+
+Turns = 6
+
+Equivalent Inductance@13.56 Mhz = 4.98 µH
+
+考虑到布线过程中的寄生电容等，接近4.84 µH，可以接受这一设计。
+
+![image-20210131215223753](image-20210131215223753.png)
