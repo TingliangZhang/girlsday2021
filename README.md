@@ -13,6 +13,8 @@ Tagmo - 制作自己的Amiibo
 
 [Mobilo - The Smart Business Card](https://www.mobilocard.com/)
 
+
+
 ## 可参考项目
 
 [PCB Business Card With NFC](https://www.instructables.com/PCB-Business-Card-With-NFC/)
@@ -22,6 +24,12 @@ Tagmo - 制作自己的Amiibo
 [Digital Business Card With NFC](https://www.instructables.com/Digital-Business-Card-With-NFC/) - 只是把NFCTag扔进两张纸之间去了。
 
 
+
+## 工具
+
+KiCAD及其插件
+
+[Interactive HTML BOM plugin for KiCad](https://github.com/openscopeproject/InteractiveHtmlBom)
 
 ## 外形设计Outline
 
@@ -164,6 +172,8 @@ Equivalent Inductance@13.56 Mhz = 4.98 µH
 
 参考C:\Program Files\KiCad\share\kicad\scripting\plugins中的脚本。
 
+C:\Users\Zhang\AppData\Roaming\kicad\scripting\plugins
+
 [KiCad](https://github.com/KiCad)/**[kicad-footprint-wizards](https://github.com/KiCad/kicad-footprint-wizards)**
 
 Defining Parameters
@@ -175,3 +185,4 @@ Footprint wizards are written in Python and are simple to develop. Each footprin
 To greatly simplify development of custom footprint wizards, the FootprintWizard base class is provided, and only a handful of simple functions need to be written for each wizards. [Read further on minimum wizard requirements](https://github.com/KiCad/Footprint_Wizards/wiki/Minimum-Wizard-Requirements)
 
 先画一个最简单的练手
+
