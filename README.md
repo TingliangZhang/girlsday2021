@@ -169,3 +169,9 @@ Equivalent Inductance@13.56 Mhz = 4.98 µH
 Defining Parameters
 
 Footprint wizards are written in Python and are simple to develop. Each footprint wizard defines a number of footprint parameters, which are organised into categories called "Pages". [Read further on footprint parameters](https://github.com/KiCad/Footprint_Wizards/wiki/Footprint-Parameters)
+
+主要参考microMatch_connectors.py，焊盘直接用SMD的长方形焊盘
+
+To greatly simplify development of custom footprint wizards, the FootprintWizard base class is provided, and only a handful of simple functions need to be written for each wizards. [Read further on minimum wizard requirements](https://github.com/KiCad/Footprint_Wizards/wiki/Minimum-Wizard-Requirements)
+
+先画一个最简单的练手
