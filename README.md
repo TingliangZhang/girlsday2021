@@ -9,6 +9,8 @@ Tagmo - 制作自己的Amiibo
 
 [Popl - Your digital business card](https://popl.co/)
 
+卡里面只有一个ID和我们服务器网址信息，具体这张名片能传达多少社交信息就由用户在网页端或者客户端配置了。以及最好加密一下，防止被轻易拿去干别的，比如友商出个教程，我们的卡就都变成他们的了
+
 [Mobilo - The Smart Business Card](https://www.mobilocard.com/)
 
 ## 可参考项目
