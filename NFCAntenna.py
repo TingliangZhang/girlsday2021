@@ -26,4 +26,4 @@ class AntennaWizard(FootprintWizardBase.FootprintWizard):
 
         self.CheckParam("Shape", "width", min_value=h/2)
 
-ExampleWizard().register()
+AntennaWizard().register()
