@@ -13,9 +13,13 @@ Tagmo - 制作自己的Amiibo
 
 ## 可参考项目
 
+[PCB Business Card With NFC](https://www.instructables.com/PCB-Business-Card-With-NFC/)
+
 [THE NFC KEY](https://n-o-d-e.net/nfckey.html)
 
-Digital Business Card With NFC - 只是把NFCTag扔进两张纸之间去了。
+[Digital Business Card With NFC](https://www.instructables.com/Digital-Business-Card-With-NFC/) - 只是把NFCTag扔进两张纸之间去了。
+
+
 
 ## 外形设计Outline
 
