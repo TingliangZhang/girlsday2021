@@ -3,7 +3,19 @@
 
 智能名片交互hhh
 
+## 功能
 
+Tagmo - 制作自己的Amiibo
+
+[Popl - Your digital business card](https://popl.co/)
+
+[Mobilo - The Smart Business Card](https://www.mobilocard.com/)
+
+## 可参考项目
+
+[THE NFC KEY](https://n-o-d-e.net/nfckey.html)
+
+Digital Business Card With NFC - 只是把NFCTag扔进两张纸之间去了。
 
 ## 外形设计Outline
 
