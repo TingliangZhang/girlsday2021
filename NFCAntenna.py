@@ -57,7 +57,7 @@ class AntennaWizard(FootprintWizardBase.FootprintWizard):
         self.draw.SetLayer(pcbnew.F_Cu)
         self.draw.SetLineThickness( w )
 
-        dimension = 4*n+1
+        row = 4*n+1
         # np.zeros((dimension, 2), dtype=int)
 
         #  edge = [[0 for col in range(2)] for row in range(dimension)]
