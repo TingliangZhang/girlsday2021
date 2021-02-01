@@ -156,8 +156,16 @@ Equivalent Inductance@13.56 Mhz = 4.98 µH
 
 动态NFC天线计算主要参考 AN2972 How to design an antenna for dynamic NFC tags 
 
+封装库画六圈螺线太难了，准备用dxf导入，先使用Adobe Illustrate绘制，依然太麻烦放弃。
 
+还是写py脚本向导吧。
 
+## NFC Antenna创建向导编写
 
+参考C:\Program Files\KiCad\share\kicad\scripting\plugins中的脚本。
 
-封装库画六圈螺线太难了，准备用dxf导入，先使用Adobe Illustrate绘制
+[KiCad](https://github.com/KiCad)/**[kicad-footprint-wizards](https://github.com/KiCad/kicad-footprint-wizards)**
+
+Defining Parameters
+
+Footprint wizards are written in Python and are simple to develop. Each footprint wizard defines a number of footprint parameters, which are organised into categories called "Pages". [Read further on footprint parameters](https://github.com/KiCad/Footprint_Wizards/wiki/Footprint-Parameters)
