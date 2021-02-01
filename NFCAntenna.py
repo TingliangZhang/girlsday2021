@@ -1,3 +1,4 @@
+# By Tina
 from __future__ import division
 import pcbnew
 import FootprintWizardBase
@@ -11,19 +12,58 @@ class AntennaWizard(FootprintWizardBase.FootprintWizard):
         return "NFC Antenna wizard used to draw NFC coil."
 
     def GetValue(self):
-        return "SimpleBox_{w}x{h}mm".format(
-            w = self.parameters["Shape"]["width"],
-            h = self.parameters["Shape"]["height"])
+        return "NFC-Antenna_{n}_{a}x{b}_{w}x{s}mm".format(
+            n = self.parameters["Geometry"]["turns"],
+            a = self.parameters["Geometry"]["length"]/1000000,
+            b = self.parameters["Geometry"]["width"]/1000000,
+            w = self.parameters["Conductor"]["linewidth"]/1000000,
+            s = self.parameters["Conductor"]["spacing"]/1000000)
     
     def GenerateParameterList(self):
-        self.AddParam("Shape", "width", self.uMM, 3.75)
-        self.AddParam("Shape", "height", self.uMM, 4.95)
+        self.AddParam("Geometry", "turns", self.uInteger, 6, min_value=1)
+        self.AddParam("Geometry", "length", self.uMM, 79.24)
+        self.AddParam("Geometry", "width", self.uMM, 47.62)
 
-        self.AddParam("PageB", "param3", self.uPercent, 33.05, min_value=20)
+        self.AddParam("Conductor", "linewidth", self.uMM, 0.6)
+        self.AddParam("Conductor", "spacing", self.uMM, 0.6)
+        self.AddParam("Conductor", "Thickness", self.uFloat, 35)
+
+        self.AddParam("Substrate", "SubstrateThickness", self.uMM, 1)
+        self.AddParam("Substrate", "Permittivity ", self.uFloat, 4.6)
+
     
     def CheckParameters(self):
-        h = self.parameters["Shape"]["height"]
+        # check that the package is large enough
+        square = pcbnew.ToMM(2 * self.parameters["Geometry"]["turns"] * (self.parameters["Conductor"]["linewidth"] + self.parameters["Conductor"]["linewidth"]))
 
-        self.CheckParam("Shape", "width", min_value=h/2)
+        self.CheckParam('Geometry','width',min_value=square,info="Package width is too small (< {w}mm)".format(w=square))
+        self.CheckParam('Geometry','length',min_value=square,info="Package length is too small (< {l}mm".format(l=square))
+    
+    def BuildThisFootprint(self):
+        # n = self.parameters["Geometry"]["turns"]
+        # a = self.parameters["Geometry"]["length"]
+        # b = self.parameters["Geometry"]["width"]
+        # w = self.parameters["Conductor"]["linewidth"]
+        # s = self.parameters["Conductor"]["spacing"]
+        geometry = self.parameters["Geometry"]
+        n = geometry["turns"]
+        a = geometry["length"]
+        b = geometry["width"]
+        conductor = self.parameters["Conductor"]
+        w = conductor["linewidth"]
+        s = conductor["spacing"]
+
+        # Draw Line on F.Cu layer
+        self.draw.SetLayer(pcbnew.F_Cu)
+        self.draw.SetLineThickness( w )
+        edge = [
+            [ a/2 , b/2 ],
+            [ -a/2 , b/2 ],
+            [ -a/2 , -b/2 ],
+            [ a/2 , -b/2 ]
+               ]
+
+        # Draw edges
+        self.draw.Polyline(edge)
 
 AntennaWizard().register()
