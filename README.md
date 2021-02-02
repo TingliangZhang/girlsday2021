@@ -37,6 +37,12 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 
 
+## 问题
+
+手机的NFC功能可能默认关闭，而且NFC线圈位置不固定：苹果在正面顶部，安卓手机大多在背面。
+
+
+
 ## 进度追踪
 
 2020/12 提出想法，女生节送智能名片
