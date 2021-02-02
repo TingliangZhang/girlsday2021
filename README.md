@@ -121,7 +121,7 @@ Tile Pro：42mm x 42mm x 6.5mm
 
 Tile Mate：35mm x 35mm x 6.2mm
 
-
+![image-20210202202509346](image-20210202202509346.png)
 
 
 
