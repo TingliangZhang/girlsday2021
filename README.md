@@ -27,9 +27,13 @@ Tagmo - 制作自己的Amiibo
 
 ## 工具
 
-KiCAD及其插件
+[KiCAD](http://www.kicad.org/)及其插件
 
 [Interactive HTML BOM plugin for KiCad](https://github.com/openscopeproject/InteractiveHtmlBom)
+
+[AutoCAD](https://www.autodesk.com/products/autocad/overview) 2021 Edu Edition
+
+
 
 ## 外形设计Outline
 
@@ -168,7 +172,15 @@ Equivalent Inductance@13.56 Mhz = 4.98 µH
 
 还是写py脚本向导吧。
 
+
+
 ## NFC Antenna创建向导编写
+
+参考官方示例
+
+https://docs.kicad.org/5.1/en/pcbnew/pcbnew.html#Footprint_Wizards
+
+[KiCad Scripting Examples](https://kicad.mmccoo.com/?page_id=83)
 
 参考C:\Program Files\KiCad\share\kicad\scripting\plugins中的脚本。
 
@@ -225,6 +237,26 @@ QR Code Wizard使用丝印层而非铜层
 
 故字符采用0.2mm线宽 1mm字符高度
 
-目前仅支持英文字符
+目前仅支持英文字符，KiCAD 6.0 将支持中文字符输入
+
+
 
 ## 矢量图导入
+
+使用KiCAD主页 位图转换为元件 工具进行转换，直接可以导出kicad_mod文件，注意选择顶层丝印。
+
+调黑白阈值还是很丑的，可以考虑通过Artline生成简笔画。
+
+调整尺寸需要通过调分辨率实现，DPI越高图片越小。注意名片尺寸为85.60×53.98毫米，合适的头像应当为30mm x 30mm
+
+同学们头像参数调节
+
+| Who   | DPI  | 尺寸      | 黑白阈值 |
+| ----- | ---- | --------- | -------- |
+| cai   | 600  | 26 x 26mm | 80       |
+| luna  | 700  | 30 x 30mm | 70       |
+| danni |      |           |          |
+
+
+
+[Artistic PCB Design for Terrified Beginners](https://wiki.hope.net/index.php?title=Artistic_PCB_Design_for_Terrified_Beginners_workshop)
