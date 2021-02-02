@@ -117,11 +117,15 @@ ISO 7813规范ID-1塑胶银行卡的附加特性，包括0.76毫米厚度，及3
 
 ## Tile大小版本设计
 
-Tile Pro：42mm x 42mm x 6.5mm
+Tile Pro：42mm x 42mm x 6.5mm  孔7mm直径
 
-Tile Mate：35mm x 35mm x 6.2mm
+Tile Mate：35mm x 35mm x 6.2mm 孔6.5mm
 
 ![image-20210202202509346](image-20210202202509346.png)
+
+初步设计为 40mm x 40mm x 1.6mm 孔6mm直径 倒角5mm直径圆
+
+
 
 
 
