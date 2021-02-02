@@ -202,3 +202,29 @@ To greatly simplify development of custom footprint wizards, the FootprintWizard
 
 之后手动添加焊盘，嘉立创双面板最小过孔内径0.3mm,最小外径0.5mm，一号焊盘用0.6x1.524mm矩形贴片，注意取消勾选F.Paste和F.Mask工艺层以令外观美观，二号焊盘用圆形通孔0.8x0.5mm，注意取消勾选F.Mask和B.Mask工艺层以令外观美观
 
+左下角：（100，100）
+
+右上角：（185.6，46.02）
+
+中心定位点：（142.8，73.01）
+
+
+
+## 信息填写
+
+QR Code Wizard使用丝印层而非铜层
+
+> Use SilkS layer: True
+> Use Cu layer: False
+
+
+
+字符：
+
+最小字符：线宽6mil 字符高40mil，参数为极限值，尽量大于此参数
+
+故字符采用0.2mm线宽 1mm字符高度
+
+目前仅支持英文字符
+
+## 矢量图导入
