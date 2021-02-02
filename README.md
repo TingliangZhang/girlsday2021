@@ -62,10 +62,10 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 - [ ] 服务器配置
 - [ ] 网站搭建
 - [ ] PCB外观设计
-- [ ] 自动生成PCB脚本编写
+- [ ] 自动生成PCB脚本编写（集成bitmap2component）
 - [ ] 硬件原理调试
 - [ ] 用户体验测试（大雾）
-- [ ] SD卡大小Tag设计和测试
+- [ ] SD卡大小Tag设计和测试，特别是V槽拼版
 
 
 
@@ -76,6 +76,14 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 [Interactive HTML BOM plugin for KiCad](https://github.com/openscopeproject/InteractiveHtmlBom)
 
 [AutoCAD](https://www.autodesk.com/products/autocad/overview) 2021 Edu Edition
+
+
+
+Linux下软件：
+
+[Krita | Digital Painting. Creative Freedom.](https://krita.org/) 绘画软件
+
+[Draw Freely | Inkscape](https://inkscape.org/) 矢量图编辑器
 
 
 
