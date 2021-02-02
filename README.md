@@ -3,6 +3,8 @@
 
 智能名片交互hhh
 
+
+
 ## 功能
 
 Tagmo - 制作自己的Amiibo
@@ -22,6 +24,31 @@ Tagmo - 制作自己的Amiibo
 [THE NFC KEY](https://n-o-d-e.net/nfckey.html)
 
 [Digital Business Card With NFC](https://www.instructables.com/Digital-Business-Card-With-NFC/) - 只是把NFCTag扔进两张纸之间去了。
+
+
+
+## 进度追踪
+
+2020/12 提出想法，女生节送智能名片
+
+2021/1/27 开始设计
+
+2021/1/28-29 元件选型和天线参数计算
+
+2021/1/30-2/2 天线python脚本生成编写
+
+2021/2/2 第一版测试板交付嘉立创打样，同时采购了元件，同时着手买NFC和RFID读取器
+
+
+
+## To Do List
+
+- [ ] 服务器配置
+- [ ] 网站搭建
+- [ ] PCB外观设计
+- [ ] 自动生成PCB脚本编写
+- [ ] 硬件原理调试
+- [ ] 用户体验测试（大雾）
 
 
 
