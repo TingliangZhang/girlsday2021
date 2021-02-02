@@ -188,7 +188,7 @@ To greatly simplify development of custom footprint wizards, the FootprintWizard
 
 
 
-注意每次更改需要重启KiCAD新脚本才能生效，DeBug的时候因为这个浪费了不少时间。
+注意每次更改需要重启KiCAD新脚本才能生效，DeBug的时候因为这个浪费了不少时间。如果加载脚本失败，可以看到报错信息。
 
 通过self.AddParam("Conductor", "spacing", self.uMM, 0.6)传递进来的 self.uMM 其实是已经转化成nm为单位的整型变量了，不需要再用pcbnew.FromMM(1.0)转换为nm。
 
