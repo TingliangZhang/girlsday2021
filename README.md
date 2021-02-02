@@ -13,6 +13,8 @@ Tagmo - 制作自己的Amiibo
 
 卡里面只有一个ID和我们服务器网址信息，具体这张名片能传达多少社交信息就由用户在网页端或者客户端配置了。以及最好加密一下，防止被轻易拿去干别的，比如友商出个教程，我们的卡就都变成他们的了
 
+[The Blue Smart Card](https://blue.social/) - Reinventing the Name Tag. Create your virtual identity and be social again.
+
 [Mobilo - The Smart Business Card](https://www.mobilocard.com/)
 
 
@@ -22,6 +24,10 @@ Tagmo - 制作自己的Amiibo
 KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-whole-wallet-in-one-card--3#/): Your Whole Wallet in One Card
 
 [Unbox Therapy](https://www.youtube.com/channel/UCsTcErHg8oDvUnTzoqsYeNw)评测视频：[Your Whole Wallet In One Card](https://www.youtube.com/watch?v=7SPOVJi3H6g)
+
+
+
+[Find Your Keys, Wallet & Phone with Tile's App and Bluetooth](https://www.thetileapp.com/en-us/)
 
 
 
@@ -106,6 +112,16 @@ ISO 7813规范ID-1塑胶银行卡的附加特性，包括0.76毫米厚度，及3
 
 
 或者用ID-3画成小的钥匙链
+
+
+
+## Tile大小版本设计
+
+Tile Pro：42mm x 42mm x 6.5mm
+
+Tile Mate：35mm x 35mm x 6.2mm
+
+
 
 
 
