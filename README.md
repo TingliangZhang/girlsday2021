@@ -17,13 +17,23 @@ Tagmo - 制作自己的Amiibo
 
 
 
+[Fuze Card, 0.84mm innovative electronic card technology.](https://fuzecard.com/)
+
+KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-whole-wallet-in-one-card--3#/): Your Whole Wallet in One Card
+
+[Unbox Therapy](https://www.youtube.com/channel/UCsTcErHg8oDvUnTzoqsYeNw)评测视频：[Your Whole Wallet In One Card](https://www.youtube.com/watch?v=7SPOVJi3H6g)
+
+
+
 ## 可参考项目
 
-[PCB Business Card With NFC](https://www.instructables.com/PCB-Business-Card-With-NFC/)
+[PCB Business Card With NFC](https://www.instructables.com/PCB-Business-Card-With-NFC/) - 能存网址的名片
 
-[THE NFC KEY](https://n-o-d-e.net/nfckey.html)
+[THE NFC KEY](https://n-o-d-e.net/nfckey.html) - 存储密钥的带物理按键NFC
 
 [Digital Business Card With NFC](https://www.instructables.com/Digital-Business-Card-With-NFC/) - 只是把NFCTag扔进两张纸之间去了。
+
+[StyloCard](https://mitxela.com/projects/stylocard) - 乐器名片
 
 
 
