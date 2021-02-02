@@ -192,8 +192,13 @@ To greatly simplify development of custom footprint wizards, the FootprintWizard
 
 通过self.AddParam("Conductor", "spacing", self.uMM, 0.6)传递进来的 self.uMM 其实是已经转化成nm为单位的整型变量了，不需要再用pcbnew.FromMM(1.0)转换为nm。
 
-
+<img src="image-20210202083858099.png" alt="image-20210202083858099" style="zoom:50%;" />
 
 算法可参考HTML的脚本，but我选择自己写hhh
 
-二维数组需要初始化
+二维数组需要初始化，测试py文件单独编写测试，VScode在安装Python插件后可以在Debug标签页查看变量。
+
+
+
+之后手动添加焊盘，嘉立创双面板最小过孔内径0.3mm,最小外径0.5mm，一号焊盘用0.6x1.524mm矩形贴片，注意取消勾选F.Paste和F.Mask工艺层以令外观美观，二号焊盘用圆形通孔0.8x0.5mm，注意取消勾选F.Mask和B.Mask工艺层以令外观美观
+
