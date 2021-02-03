@@ -78,6 +78,7 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 - [ ] 硬件原理调试
 - [ ] 用户体验测试（大雾）
 - [ ] SD卡大小Tag设计和测试，特别是V槽拼版
+- [ ] 加入墨水屏
 
 
 
@@ -377,3 +378,10 @@ QR Code Wizard使用丝印层而非铜层
 
 
 [Artistic PCB Design for Terrified Beginners](https://wiki.hope.net/index.php?title=Artistic_PCB_Design_for_Terrified_Beginners_workshop)
+
+
+
+## NFC + 墨水屏
+
+[实用新型] 一种无源NFC电子墨水屏显示系统 申请号：2020204091829
+
