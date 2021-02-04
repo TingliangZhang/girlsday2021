@@ -47,7 +47,7 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 [StyloCard](https://mitxela.com/projects/stylocard) - 乐器名片
 
-
+[L-ink_Card](https://github.com/peng-zhihui/L-ink_Card) - 带墨水屏的NFC Tag
 
 ## 问题
 
@@ -173,6 +173,8 @@ V-CUT（V割工艺）：
 但是拼版订单要多加钱。
 
 所以还是先打单板吧。
+
+
 
 ## 简笔画头像生成
 
