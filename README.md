@@ -385,3 +385,10 @@ QR Code Wizard使用丝印层而非铜层
 
 [实用新型] 一种无源NFC电子墨水屏显示系统 申请号：2020204091829
 
+微雪e-Paper相关资料
+
+https://www.waveshare.net/wiki/Main_Page#Display-e-Paper
+
+特别是驱动板如[e-Paper Driver HAT](https://www.waveshare.net/wiki/E-Paper_Driver_HAT)等
+
+但是屏线多数是SPI，所以估计需要一个STM32转接一下，其实之后的按键等外围设备也需要一个单片机来做。
