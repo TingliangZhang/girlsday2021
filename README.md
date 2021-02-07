@@ -398,3 +398,11 @@ https://www.waveshare.net/wiki/Main_Page#Display-e-Paper
 特别是驱动板如[e-Paper Driver HAT](https://www.waveshare.net/wiki/E-Paper_Driver_HAT)等
 
 但是屏线多数是SPI，所以估计需要一个STM32转接一下，其实之后的按键等外围设备也需要一个单片机来做。
+
+
+
+## V1V2焊接调试
+
+注意ST24的marker是一边的斜边对应1号脚所在的位置，其实反色的ST标着对应的也是marker。
+
+<img src="image-20210207165935055.png" alt="image-20210207165935055" style="zoom:10%;transform:rotate(270deg);" />
