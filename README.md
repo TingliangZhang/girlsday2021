@@ -406,3 +406,5 @@ https://www.waveshare.net/wiki/Main_Page#Display-e-Paper
 注意ST24的marker是一边的斜边对应1号脚所在的位置，其实反色的ST标着对应的也是marker。
 
 <img src="image-20210207165935055.png" alt="image-20210207165935055" style="zoom:10%;transform:rotate(270deg);" />
+
+在不带载的情况下，EH输出大约为0.5V以下。暂时不上LED了，LED允许电压普遍在2.5V 20mA左右，可能会BOOM。下个版本加电阻吧。
