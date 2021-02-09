@@ -401,6 +401,16 @@ https://www.waveshare.net/wiki/Main_Page#Display-e-Paper
 
 
 
+NFC墨水屏模块
+
+https://www.waveshare.net/wiki/2.7inch_NFC-Powered_e-Paper_Module
+
+NFC烧写器开发板
+
+https://www.waveshare.net/wiki/ST25R3911B_NFC_Board
+
+
+
 ## V1V2焊接调试
 
 注意ST24的marker是一边的斜边对应1号脚所在的位置，其实反色的ST标着对应的也是marker。
