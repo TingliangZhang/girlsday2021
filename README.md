@@ -411,6 +411,24 @@ https://www.waveshare.net/wiki/ST25R3911B_NFC_Board
 
 
 
+购买了以上两种产品，发现NFC墨水屏的主控芯片型号竟然被磨掉了。。。
+
+<img src="image-20210211104203433.png" alt="image-20210211104203433" style="zoom:10%;transform:rotate(270deg);" />
+
+通过SWD接口接入，读取到型号是[STM32L4P5/Q5](https://www.st.com/en/microcontrollers-microprocessors/stm32l4p5-q5.html)，不出所料，ultra‐low‐power系列。
+
+<img src="image-20210211104320836.png" alt="image-20210211104320836" style="zoom:25%;" />
+
+旁边的那个写着ofz 02f s20x的6pin芯片是 TPS62122，降压dcdc
+
+NFC Tag估计是，用NFC Tools Pro读取得到型号，是一个NXP MIFARE Ultralight
+
+<img src="image-20210211104608506.png" alt="image-20210211104608506" style="zoom:25%;" />
+
+现在量一下电容充电曲线，7.5V，在识别和写图的时候充能，但是没有明显的充放电，应该就是个小电容。
+
+<img src="image-20210211105954953.png" alt="image-20210211105954953" style="zoom:25%;" />
+
 ## V1V2焊接调试
 
 注意ST24的marker是一边的斜边对应1号脚所在的位置，其实反色的ST标着对应的也是marker。
