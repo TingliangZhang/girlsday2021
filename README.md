@@ -421,7 +421,7 @@ https://www.waveshare.net/wiki/ST25R3911B_NFC_Board
 
 旁边的那个写着ofz 02f s20x的6pin芯片是 TPS62122，降压dcdc
 
-NFC Tag估计是，用NFC Tools Pro读取得到型号，是一个NXP MIFARE Ultralight
+NFC Tag估计是用STM32搞的，用NFC Tools Pro读取得到型号，是一个NXP MIFARE Ultralight
 
 <img src="image-20210211104608506.png" alt="image-20210211104608506" style="zoom:25%;" />
 
