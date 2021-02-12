@@ -1,4 +1,4 @@
-(module NFC-Antenna_6_79.24x47.62_0.6x0.6mm (layer F.Cu) (tedit 6025E042)
+(module NFC-Antenna_6_79.24x47.62_0.6x0.6mm (layer F.Cu) (tedit 6025EEB7)
   (fp_text reference REF** (at 0 -2.54) (layer Dwgs.User)
     (effects (font (size 1.27 1.27) (thickness 0.15)))
   )
@@ -30,5 +30,5 @@
   (fp_line (start 39.32 23.51) (end 39.32 -23.51) (layer F.Cu) (width 0.6))
   (fp_line (start -39.32 23.51) (end 39.32 23.51) (layer F.Cu) (width 0.6))
   (pad 1 smd rect (at -32.85 16.325) (size 1.524 0.6) (layers F.Cu))
-  (pad 2 thru_hole circle (at -39.25 23.5) (size 0.8 0.8) (drill 0.5) (layers *.Cu))
+  (pad 2 smd rect (at -40 23.51) (size 1.524 0.6) (layers F.Cu F.Paste F.Mask))
 )
