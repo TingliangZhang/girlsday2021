@@ -436,3 +436,15 @@ NFC Tag估计是，用NFC Tools Pro读取得到型号，是一个NXP MIFARE Ultr
 <img src="image-20210207165935055.png" alt="image-20210207165935055" style="zoom:10%;transform:rotate(270deg);" />
 
 在不带载的情况下，EH输出大约为0.5V以下。暂时不上LED了，LED允许电压普遍在2.5V 20mA左右，可能会BOOM。下个版本加电阻吧。
+
+
+
+## V3名片设计
+
+增加LED限流电阻
+
+在背面增加两个具有代表性的SMD芯片封装，贴片装饰LQFP-100和BGA
+
+删除头像丝印，规范个人信息排版方式
+
+删除中心定位焊盘

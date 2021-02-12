@@ -6,3 +6,6 @@
 *.dcm
 CardV1/fp-info-cache
 CardV2/fp-info-cache
+CardV3/Card-cache.lib
+CardV3/fp-info-cache
+CardV3/fp-lib-table
