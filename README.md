@@ -85,7 +85,7 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/12 大年初一，选取UX和UI设计工具，开始学习Figma
 
-2021/2/13 开工画UX，画了一上午画出来一个登录界面，UX设计师真不容易
+2021/2/13 开工画UX，画了一上午画出来一个登录界面，UX设计师真不容易，决定先用iPad的Procreate来画草图。
 
 
 
