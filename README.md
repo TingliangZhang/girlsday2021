@@ -71,6 +71,8 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/2 第一版测试板交付嘉立创打样，同时采购了元件，同时着手买NFC和RFID读取器
 
+2021/2/4 V2交付打样，使用白色阻焊，尝试效果
+
 2021/2/7 V1V2打样完成，焊接测试完成，功能完好
 
 2021/2/8 开始规划网站服务，并学习React框架
