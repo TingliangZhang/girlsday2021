@@ -544,6 +544,10 @@ https://jekyllrb.com/docs/installation/windows/
 
 WSL安装：在 程序和功能 中使能 适用于 Linux 的 Windows 子系统，之后在Windows应用商店安装Ubuntu，之后可以通过shift+右键打开bash，也可以在powershell里面输bash激活。
 
+[Install WSL & update to WSL 2](https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+
+Before installing WSL 2, you must enable the **Virtual Machine Platform** optional feature. Your machine will require [virtualization capabilities](https://docs.microsoft.com/en-us/windows/wsl/troubleshooting#error-0x80370102-the-virtual-machine-could-not-be-started-because-a-required-feature-is-not-installed) to use this feature.
+
 一开始我以为是bash和虚拟机冲突导致闪退，结果是我没安应用商店的Ubuntu。。。
 
 2021/2/17早上6点更新：WSL还是太麻烦了，在`gem update`卡住了，还是换成[RubyInstaller](https://rubyinstaller.org/) for Windows.
