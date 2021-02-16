@@ -543,3 +543,6 @@ https://jekyllrb.com/docs/
 https://jekyllrb.com/docs/installation/windows/
 
 WSL安装：在 程序和功能 中使能 适用于 Linux 的 Windows 子系统，之后在Windows应用商店安装Ubuntu，之后可以通过shift+右键打开bash，也可以在powershell里面输bash激活。
+
+一开始我以为是bash和虚拟机冲突导致闪退，结果是我没安应用商店的Ubuntu。。。
+
