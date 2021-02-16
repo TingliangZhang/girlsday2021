@@ -493,14 +493,31 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 ## 网站搭建
 
-班级主页
+- [ ] 班级主页
+- [ ] 个人主页
+- [ ] 博客
+- [ ] E-mail系统
+- [ ] iTag系统
+- [ ] 私信系统
 
-个人主页
+
+
+候选框架：
+
+[Hexo](https://hexo.io/zh-cn/)
+
+[Jekyll](https://jekyllrb.com/)
+
+The world’s fastest framework for building websites | [Hugo](https://gohugo.io/)
+
+[Dreamwaver](https://www.adobe.com/products/dreamweaver.html)自带Bootstrap模板
+
+
+
+班级主页
 
 博客
 
-E-mail系统
+参考网站： [Harry Chen's Blog](https://harrychen.xyz/)
 
-iTag系统
-
-私信系统
+Jelly主题
