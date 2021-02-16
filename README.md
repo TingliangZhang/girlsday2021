@@ -521,3 +521,9 @@ The world’s fastest framework for building websites | [Hugo](https://gohugo.io
 参考网站： [Harry Chen's Blog](https://harrychen.xyz/)
 
 Jelly主题
+
+[jamstackthemes.dev](https://jamstackthemes.dev/ssg/jekyll/)
+
+
+
+[beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)
