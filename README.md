@@ -520,7 +520,7 @@ The world’s fastest framework for building websites | [Hugo](https://gohugo.io
 
 参考网站： [Harry Chen's Blog](https://harrychen.xyz/)
 
-Jelly主题
+Jekyll主题
 
 https://jamstackthemes.dev/
 
@@ -533,3 +533,13 @@ https://jamstackthemes.dev/
 
 
 https://jekyllrb.com/docs/
+
+
+
+## [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+
+首先安装[Jekyll](https://jekyllrb.com/)，Windows测试选择使用WSL安装
+
+https://jekyllrb.com/docs/installation/windows/
+
+WSL安装：在 程序和功能 中使能 适用于 Linux 的 Windows 子系统，之后在Windows应用商店安装Ubuntu，之后可以通过shift+右键打开bash，也可以在powershell里面输bash激活。
