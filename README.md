@@ -546,3 +546,11 @@ WSL安装：在 程序和功能 中使能 适用于 Linux 的 Windows 子系统�
 
 一开始我以为是bash和虚拟机冲突导致闪退，结果是我没安应用商店的Ubuntu。。。
 
+2021/2/17早上6点更新：WSL还是太麻烦了，在`gem update`卡住了，还是换成[RubyInstaller](https://rubyinstaller.org/) for Windows.
+
+[RubyInstaller](https://rubyinstaller.org/) for Windows 还是挺人性化的，跟着引导安就好。
+
+> 1. Download and install a **Ruby+Devkit** version from [RubyInstaller Downloads](https://rubyinstaller.org/downloads/). Use default options for installation.
+> 2. Run the `ridk install` step on the last stage of the installation wizard. This is needed for installing gems with native extensions. You can find additional information regarding this in the [RubyInstaller Documentation](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)
+> 3. Open a new command prompt window from the start menu, so that changes to the `PATH` environment variable becomes effective. Install Jekyll and Bundler using `gem install jekyll bundler`
+> 4. Check if Jekyll has been installed properly: `jekyll -v`
