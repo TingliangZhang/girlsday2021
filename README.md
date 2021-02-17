@@ -558,3 +558,21 @@ Before installing WSL 2, you must enable the **Virtual Machine Platform** option
 > 2. Run the `ridk install` step on the last stage of the installation wizard. This is needed for installing gems with native extensions. You can find additional information regarding this in the [RubyInstaller Documentation](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)
 > 3. Open a new command prompt window from the start menu, so that changes to the `PATH` environment variable becomes effective. Install Jekyll and Bundler using `gem install jekyll bundler`
 > 4. Check if Jekyll has been installed properly: `jekyll -v`
+
+新建一个 `index.html` 
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+  </head>
+  <body>
+    <h1>Hello World!</h1>
+  </body>
+</html>
+```
+
+之后使用`jekyll build` 编译，`jekyll serve --livereload`暂时没跑通，有bug
+
