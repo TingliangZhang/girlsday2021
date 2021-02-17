@@ -576,3 +576,6 @@ Before installing WSL 2, you must enable the **Virtual Machine Platform** option
 
 之后使用`jekyll build` 编译，`jekyll serve --livereload`暂时没跑通，有bug
 
+注意在Gemfile里面要使用[Bundler](https://bundler.io/) command才能顺利安装各种gem包
+
+用`jekyll serve --livereload`直接动态编译依然报错，原因应该是 EventMachine 还没支持 Ruby 3.0，算了暂时只build看看吧。
