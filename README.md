@@ -581,3 +581,39 @@ Before installing WSL 2, you must enable the **Virtual Machine Platform** option
 用`jekyll serve --livereload`直接动态编译依然报错，原因应该是 EventMachine 还没支持 Ruby 3.0，算了暂时只build看看吧。
 
 气，卸了换成Ruby 2.7.2
+
+还是报错，不过我终于找到了解决方案：
+
+https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-679206413
+
+> For Ruby 2.5 and later, try:
+>
+> ```sh
+> gem uninstall eventmachine
+> ridk exec pacman -Sy openssl
+> gem install eventmachine --platform=ruby
+> 
+> # 最后运行一下，以解决 Could not find eventmachine-1.2.7-x64-mingw32 in any of the sources 的bundle错误
+> bundle update
+> ```
+>
+> `ridk exec pacman -Sy openssl` updates MSYS2 and installs the MSYS2 openssl package. This may take a little while...
+>
+> `gem install eventmachine --platform=ruby` installs EventMachine but forces compiling the gem
+>
+> EventMachine's current x64-mingw32 gem is not compatible with Ruby 2.6 and later, and it was accidentally built without that information in the gemspec.
+
+重新编译时间长，完事还是会报错
+
+> If you are using windows
+>
+> Go to this folder `C:\Ruby24-x64\lib\ruby\gems\{version of ruby}\gems\eventmachine-1.2.5-x64-mingw32\lib`
+>
+> open this file `eventmachine.rb`
+>
+> write this `require 'em/pure_ruby'` in the first line of code in the file
+> this will make it work with no issues.
+
+这次不报`Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'`错了，报了`pure_ruby.rb:559:in `close': Bad file descriptor (Errno::EBADF)`
+
+看各种stack overflow貌似是端口占用？
