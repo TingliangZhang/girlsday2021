@@ -617,3 +617,5 @@ https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-679206413
 这次不报`Unable to load the EventMachine C extension; To use the pure-ruby reactor, require 'em/pure_ruby'`错了，报了`pure_ruby.rb:559:in `close': Bad file descriptor (Errno::EBADF)`
 
 看各种stack overflow貌似是端口占用？
+
+放弃。。。Ruby真不友好。。。
