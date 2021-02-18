@@ -501,7 +501,9 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 可选[用VNC搭建Ubuntu VNC可视化界面](https://help.aliyun.com/knowledge_detail/59330.html)
 
+vnc4server还没出Ubuntu20.04版本的，啊这。。。
 
+我还是用[code-server](https://github.com/cdr/code-server)吧。
 
 ## 网站搭建
 
