@@ -93,9 +93,9 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/17 搞网站备案，头大
 
-2021/2/18 为了拿备案服务号，购买了阿里云一年的主机，并且配置Ubuntu环境，终于提交管局审核，开始两周的等待
+2021/2/18 为了拿备案服务号，购买了阿里云一年的主机，并且配置Ubuntu环境和VS Code网页版，终于提交管局审核。把一大箱硬件开发的东西寄回清华。
 
-
+2021/2/19 
 
 ## To Do List
 
