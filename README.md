@@ -505,6 +505,67 @@ vnc4server还没出Ubuntu20.04版本的，啊这。。。
 
 我还是用[code-server](https://github.com/cdr/code-server)吧。
 
+### Code-Server安装
+
+> If you choose to use the install script, you can preview what occurs during the install process:
+>
+> ```sh
+> curl -fsSL https://code-server.dev/install.sh | sh -s -- --dry-run
+> ```
+>
+> To install, run:
+>
+> ```sh
+> curl -fsSL https://code-server.dev/install.sh | sh
+> ```
+
+### Code-Server SSH forwarding
+
+首先在阿里云设置ssh密码，其实就是root账户的密码。
+
+注意一开始的sed命令要使用admin而非root，而最后本地的user阿里云设置的密码是root密码。
+
+> First, ssh into your instance and edit your `code-server` config file to disable password authentication.
+>
+> ```sh
+> # Replaces "auth: password" with "auth: none" in the code-server config.
+> sed -i.bak 's/auth: password/auth: none/' ~/.config/code-server/config.yaml
+> ```
+>
+> Restart `code-server` with (assuming you followed the guide):
+>
+> ```sh
+> sudo systemctl restart code-server@$USER
+> ```
+>
+> Now forward local port 8080 to `127.0.0.1:8080` on the remote instance by running the following command on your local machine.
+>
+> Recommended reading: https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding.
+>
+> ```sh
+> # -N disables executing a remote shell
+> ssh -N -L 8080:127.0.0.1:8080 [user]@<instance-ip>
+> ```
+>
+> Now if you access [http://127.0.0.1:8080](http://127.0.0.1:8080/) locally, you should see `code-server`!
+
+总结：SSH到云端执行的
+
+```sh
+sed -i.bak 's/auth: password/auth: none/' ~/.config/code-server/config.yaml
+sudo systemctl restart code-server@admin
+```
+
+在本地执行
+
+```sh
+ssh -N -L 8080:127.0.0.1:8080 root@47.94.150.220
+```
+
+用chrome打开 [http://127.0.0.1:8080](http://127.0.0.1:8080/) 即可访问网页端VScode。
+
+
+
 ## 网站搭建
 
 - [ ] 班级主页
