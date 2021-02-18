@@ -725,3 +725,31 @@ https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-679206413
 看各种stack overflow貌似是端口占用？
 
 放弃。。。Ruby真不友好。。。
+
+
+
+## VirtualBox + Ubuntu20.04
+
+为了给Ruby提供测试环境，安一个Ubuntu虚拟机，预计之后的云服务器和本地自建服务器生产环境都是Ubuntu20.04。
+
+设置root密码
+
+```sh
+$ sudo passwd
+[sudo] grace 的密码:        #输入grace账号的密码
+新的 密码:                  #定义root密码
+重新输入新的 密码:           #确认root密码
+password: 已成功更新密码     #成功提示
+$ su                       #su验证登录
+```
+
+安装增强功能
+
+```sh
+$ su #切换root账号
+$ apt-get update   #更新源
+$ sudo apt-get install build-essential gcc make perl dkms  #安装依赖
+$ reboot  #重启系统
+```
+
+直接 设备 -> 安装增强功能 -> 运行 -> 重启系统 是不行的，需要先安依赖。
