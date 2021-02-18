@@ -97,6 +97,8 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/19 把Ruby和Jekyll开发环境配置好，其实就放弃了动态构建，只用build吧，研究Jekyll主题的使用
 
+2021/2/20 返校，使用Ubuntu环境跑Jekyll
+
 
 
 ## To Do List
@@ -107,7 +109,8 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 - [ ] PCB外观设计
 - [ ] 自动生成PCB脚本编写（集成bitmap2component）
 - [x] 硬件原理调试
-- [x] 用户体验测试（大雾）
+- [x] UX和UI设计
+- [ ] 用户体验测试（大雾）
 - [ ] SD卡大小Tag设计和测试，特别是V槽拼版
 - [ ] 加入墨水屏
 
@@ -630,13 +633,7 @@ Jekyll主题
 
 https://jamstackthemes.dev/
 
-
-
 [beautiful-jekyll](https://github.com/daattali/beautiful-jekyll)
-
-
-
-
 
 https://jekyllrb.com/docs/
 
