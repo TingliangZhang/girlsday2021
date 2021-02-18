@@ -491,6 +491,18 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 
 
+## 阿里云服务器相关
+
+纠结好久，最后选择购买阿里云的[轻量应用服务器](https://www.aliyun.com/product/swas)，首先有学生价，其次可以安装Ubuntu，比腾讯云的轻量应用服务器要好。
+
+最主要的是，[网站备案](https://beian.aliyun.com/)需要的[备案服务号](https://help.aliyun.com/document_detail/36938.html)轻量应用服务器实例可以提供5个（参见[支持备案的云服务及备案网站数量](https://help.aliyun.com/document_detail/36891.html)）
+
+我选择安装Ubuntu20.04，进去之后好快啊，通过输入“sudo su root”切换至root账号
+
+可选[用VNC搭建Ubuntu VNC可视化界面](https://help.aliyun.com/knowledge_detail/59330.html)
+
+
+
 ## 网站搭建
 
 - [ ] 班级主页
