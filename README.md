@@ -103,8 +103,11 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 ## To Do List
 
-- [x] 服务器配置
+- [x] 云服务器配置
+- [ ] 本地服务器搭建（Dell R720）
 - [x] 域名注册
+- [x] 域名备案
+- [ ] SSL证书（上https）
 - [ ] 网站搭建
 - [ ] PCB外观设计
 - [ ] 自动生成PCB脚本编写（集成bitmap2component）
