@@ -782,7 +782,7 @@ sudo ./VBoxLinuxAdditions.run
 
 常见的疑难杂症：
 
-[Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?](https://askubuntu.com/questions/15433/unable-to-lock-the-administration-directory-var-lib-dpkg-is-another-process)
+[Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?](https://askubuntu.com/questions/15433/unable-to-lock-the-administration-directory-var-lib-dpkg-is-another-process)  其实跟有可能你没sudo哈哈哈
 
 不锁屏设置：System Settings-Privacy-Screen Lock-Automatic Screen Lock-Off
 
