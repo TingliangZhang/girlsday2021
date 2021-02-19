@@ -734,7 +734,7 @@ https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-679206413
 cd ./test
 bundle update
 jekyll server
-jekyll serve --livereload
+jekyll server --livereload
 ```
 
 woc，竟然直接成了。。。程序样例赛高~ さいこう
