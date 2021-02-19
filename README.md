@@ -816,5 +816,7 @@ vi /etc/apt/sources.list
 
 不改的话会慢到龟速。。。当然阿里云就不用了，默认镜像源是阿里源，贼快。
 
-完事可以尝试安装Ruby运行环境和Chromium以及VScode
+Chromium以及VScode直接用应用商店安就好了。
+
+完事可以尝试安装Ruby运行环境和
 
