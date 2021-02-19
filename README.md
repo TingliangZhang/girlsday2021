@@ -728,6 +728,18 @@ https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-679206413
 
 
 
+先尝试示例吧，在test下面
+
+```sh
+cd ./test
+bundle update
+jekyll server
+```
+
+woc，竟然直接成了。。。
+
+
+
 ## VirtualBox + Ubuntu20.04
 
 为了给Ruby提供测试环境，安一个Ubuntu虚拟机，预计之后的云服务器和本地自建服务器生产环境都是Ubuntu20.04。
@@ -752,4 +764,16 @@ $ sudo apt-get install build-essential gcc make perl dkms  #安装依赖
 $ reboot  #重启系统
 ```
 
-直接 设备 -> 安装增强功能 -> 运行 -> 重启系统 是不行的，需要先安依赖。
+直接 设备 -> 安装增强功能 -> 运行 -> 重启系统 是不行的，需要先安依赖。参考[VirtualBox Guest Additions installation problem ](https://askubuntu.com/questions/1035030/virtualbox-guest-additions-installation-problem)
+
+```sh
+# 如果没弹窗，可以手动运行.run文件
+sudo ./VBoxLinuxAdditions.run
+```
+
+常见的疑难杂症：
+
+[Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?](https://askubuntu.com/questions/15433/unable-to-lock-the-administration-directory-var-lib-dpkg-is-another-process)
+
+完事可以尝试安装Ruby运行环境和Chromium以及VScode
+
