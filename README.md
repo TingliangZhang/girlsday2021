@@ -780,6 +780,32 @@ $ reboot  #重启系统
 sudo ./VBoxLinuxAdditions.run
 ```
 
+安gcc的时候报错：E: Unable to correct problems, you have held broken packages.
+
+https://blog.csdn.net/xpy870663266/article/details/94742491
+
+尝试修复：
+
+```sh
+$ sudo dpkg --configure -a
+$ sudo apt-get update
+$ sudo apt-get autoremove
+$ sudo apt-get -f install
+```
+
+没用，手动安装指定的包吧。
+
+尝试使用aptitude而不是apt-get
+
+```sh
+apt install aptitude
+aptitude install build-essential gcc make perl dkms
+```
+
+还是没解决。
+
+
+
 常见的疑难杂症：
 
 [Unable to lock the administration directory (/var/lib/dpkg/) is another process using it?](https://askubuntu.com/questions/15433/unable-to-lock-the-administration-directory-var-lib-dpkg-is-another-process)  其实跟有可能你没sudo哈哈哈
