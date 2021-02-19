@@ -734,9 +734,18 @@ https://github.com/oneclick/rubyinstaller2/issues/96#issuecomment-679206413
 cd ./test
 bundle update
 jekyll server
+jekyll serve --livereload
 ```
 
-woc，竟然直接成了。。。
+woc，竟然直接成了。。。程序样例赛高~ さいこう
+
+但是如果打开livereload会发现如下信息
+
+```sh
+This port only serves livereload.js over HTTP.
+```
+
+也就是说还需要别的才能实时。
 
 
 
