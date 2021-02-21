@@ -514,7 +514,15 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 操作系统选择Debian+KVM(Ubuntu+WinServer)
 
+插上E5-2680v2，内存条，开机
 
+可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
+
+先安Debian：[Debian 64 位 PC（amd64）的安装手册](https://www.debian.org/releases/stable/amd64/)
+
+去tuna下载[Debian 10.8.0 (amd64, DVD installer (Part 1))](https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-dvd/debian-10.8.0-amd64-DVD-1.iso)
+
+先安
 
 ## 域名备案相关
 
