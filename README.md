@@ -540,7 +540,7 @@ TFTP网络配置需要认真看看。
 
 
 
-操作系统选择方面，先使用VirtualBox尝试安装，比如Debian之类的。
+操作系统选择方面，先使用VirtualBox尝试安装，比如Debian Live之类的。
 
 
 
