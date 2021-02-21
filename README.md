@@ -518,7 +518,9 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 第一次开机先清一下H710的默认值，可能之前的设置不对。
 
-重启后按F2进入System Config，
+重启后按F2进入System Config，最后发现是盘没插好，2.5寸用3.5寸盘架还是有点问题，换成3.5寸就好了
+
+
 
 可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
 
@@ -531,6 +533,12 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 [Installation instructions for Ubuntu Server ](https://ubuntu.com/tutorials/tutorial-install-ubuntu-server)
 
 按照[Create a bootable USB stick on Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows)使用[Rufus](https://rufus.ie/)烧写U盘
+
+最后还是决定用Debian了。。。在Debian里在搞虚拟化主机KVM安Windows之类的
+
+TFTP网络配置需要认真看看。
+
+
 
 ## 域名备案相关
 
