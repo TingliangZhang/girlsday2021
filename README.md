@@ -542,7 +542,7 @@ TFTP网络配置需要认真看看。
 
 操作系统选择方面，先使用VirtualBox尝试安装，比如Debian Live之类的。
 
-
+[Debian 10.8.0 (amd64, Live CD with gnome and non-free firmware)](https://mirrors.tuna.tsinghua.edu.cn/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-10.8.0-amd64-gnome+nonfree.iso)
 
 ## 域名备案相关
 
