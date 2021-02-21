@@ -508,6 +508,14 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 
 
+[PowerEdge R720](https://www.dell.com/support/home/zh-cn/product-support/product/poweredge-r720/overview)
+
+服务编号(Service Tag)：C8L4Z42
+
+操作系统选择Debian+KVM(Ubuntu+WinServer)
+
+
+
 ## 域名备案相关
 
 总的来说：麻烦到爆炸
