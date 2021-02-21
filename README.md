@@ -516,13 +516,21 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 插上E5-2680v2，内存条，开机
 
+第一次开机先清一下H710的默认值，可能之前的设置不对。
+
+重启后按F2进入System Config，
+
 可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
 
 先安Debian：[Debian 64 位 PC（amd64）的安装手册](https://www.debian.org/releases/stable/amd64/)
 
 去tuna下载[Debian 10.8.0 (amd64, DVD installer (Part 1))](https://mirrors.tuna.tsinghua.edu.cn/debian-cd/current/amd64/iso-dvd/debian-10.8.0-amd64-DVD-1.iso)
 
-先安
+先安Ubuntu吧qwq
+
+[Installation instructions for Ubuntu Server ](https://ubuntu.com/tutorials/tutorial-install-ubuntu-server)
+
+按照[Create a bootable USB stick on Windows](https://ubuntu.com/tutorials/create-a-usb-stick-on-windows)使用[Rufus](https://rufus.ie/)烧写U盘
 
 ## 域名备案相关
 
