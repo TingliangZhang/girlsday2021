@@ -526,6 +526,10 @@ F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk 
 
 
 
+注意Debian Live的安装界面锁屏默认密码为Live
+
+
+
 
 
 可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
