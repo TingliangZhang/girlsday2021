@@ -540,7 +540,9 @@ F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk 
 
 
 
-安装的时候BUG无法分区
+安装的时候BUG无法分区...搜了一下，是因为2T+硬盘要切换成UEFI
+
+[Dell R720上的系统安装问题的解决办法](https://www.cnblogs.com/wgp13x/p/3750957.html)
 
 
 
@@ -567,6 +569,8 @@ TFTP网络配置需要认真看看。
 Debian的各种桌面环境参考：https://www.eet-china.com/mp/a10976.html
 
 [Debian 10.8.0 (amd64, Live CD with gnome and non-free firmware)](https://mirrors.tuna.tsinghua.edu.cn/debian-nonfree/images-including-firmware/current-live/amd64/iso-hybrid/debian-live-10.8.0-amd64-gnome+nonfree.iso)
+
+
 
 ## 域名备案相关
 
