@@ -520,6 +520,8 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 重启后按F2进入System Config，最后发现是盘没插好，2.5寸用3.5寸盘架还是有点问题，换成3.5寸就好了
 
+F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk - Save and restart   就可以成功挂在硬盘到阵列卡上面了，当有 1 Virtual Device 的时候就说明成了。
+
 
 
 可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
