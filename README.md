@@ -526,9 +526,15 @@ F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk 
 
 
 
-注意Debian Live的安装界面锁屏默认密码为Live
+注意Debian Live KDE的安装界面锁屏默认密码为Live
 
 
+
+总结：首先F2-System Setting - Device Setting - H710 - Create new virtual disk - Initialize - Fast Initialize
+
+在BIOS Setting 确认SATA setting是Raid
+
+重启，没有直接引导，需要按F11选择C：-- USB 启动即可
 
 
 
