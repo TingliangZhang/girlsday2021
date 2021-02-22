@@ -522,6 +522,10 @@ BUT 校内1024以下端口不开，而且会被学校查水表，不让校内建
 
 F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk - Save and restart   就可以成功挂在硬盘到阵列卡上面了，当有 1 Virtual Device 的时候就说明成了。
 
+但是又识别不到U盘了，可能是因为有阵列卡？也可能没断电插拔？重新烧写后按F10-BOOT setting 选择USB设备启动。
+
+
+
 
 
 可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
