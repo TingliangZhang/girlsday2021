@@ -538,6 +538,10 @@ F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk 
 
 
 
+安装的时候BUG无法分区
+
+
+
 可以使用[Microsoft Windows and Office ISO Download Tool](https://www.heidoc.net/joomla/technology-science/microsoft/67-microsoft-windows-and-office-iso-download-tool)下载Windows系统，但是好像没有Windows Server 2019
 
 先安Debian：[Debian 64 位 PC（amd64）的安装手册](https://www.debian.org/releases/stable/amd64/)
