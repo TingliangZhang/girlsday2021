@@ -530,7 +530,9 @@ F2-System Setup - Device Settings - H710 Raid setting - Create new virtual disk 
 
 
 
-总结：首先F2-System Setting - Device Setting - H710 - Create new virtual disk - Initialize - Fast Initialize
+总结：首先F2-System Setting - Device Setting - H710 - Create new virtual disk - Initialize - Fast Initialize 
+
+替代办法：https://jingyan.baidu.com/article/4b52d702b7d396fc5d774b49.html 直接ctrl + R进入Raid设置
 
 在BIOS Setting 确认SATA setting是Raid
 
