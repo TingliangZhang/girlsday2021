@@ -590,6 +590,8 @@ Debian的各种桌面环境参考：https://www.eet-china.com/mp/a10976.html
 5. 选光驱（插入系统盘）
 6. Press any key to install OS
 
+后续高分屏问题解决：尝试使用Quadro K2200专业卡，使用DP输出，但是后面板挡住了DP线，需要一个扁平一点的DP。
+
 
 
 ## 域名备案相关
