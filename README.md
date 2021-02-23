@@ -99,6 +99,10 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/20 返校，使用Ubuntu环境跑Jekyll
 
+2021/2/21 - 22 组装服务器并给服务器装系统，走了很多弯路
+
+2021/2/23 装好了Debian KDE 图形化系统，开始探索如何装虚拟化环境、网站部署
+
 
 
 ## To Do List
