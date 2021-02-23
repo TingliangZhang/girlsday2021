@@ -576,6 +576,22 @@ Debian的各种桌面环境参考：https://www.eet-china.com/mp/a10976.html
 
 
 
+总结如下：
+
+1. 建立Raid
+- 开机，按ctrl+R进行Raid配置
+- 选择Raid卡，按F2，清除现有Raid
+- 光标选择到Raid卡，按F2，create new VD，将6个HD全做Raid5（或Raid6）
+- 按F2，init VD （初始化VD）
+- 配置完成后重启
+2. 开机按F2进行BIOS设置 （如果总硬盘小于2T此步略去）进入BIOS，将启动模式选择成UEFI
+3. 开机按F11进行UEFI启动（如果总硬盘小于2T此步略去）
+4. 进入Boot Manager，选择UEFI Boot Menu（如果总硬盘小于2T，选择Bios Boot Menu）
+5. 选光驱（插入系统盘）
+6. Press any key to install OS
+
+
+
 ## 域名备案相关
 
 总的来说：麻烦到爆炸
