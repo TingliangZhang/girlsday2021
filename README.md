@@ -936,10 +936,26 @@ Chromium以及VScode直接用应用商店安就好了。
 
 ## 虚拟化操作系统搭建
 
-KVM虚拟机选择：
+KVM虚拟机选择
+
+先在本地尝试，需要一个测试用电脑，我大一用的老笔记本挺合适的。2021/2/23晚重新启用老电脑
+
+### ProxmoxVE 6
 
 https://www.proxmox.com/en/
 
+教程：基于Debian10搭建ProxmoxVE 6虚拟化环境 https://www.jianshu.com/p/411e66dba2b2
 
+下载ISO镜像，可以选择清华TUNA源[proxmox-ve_6.3-1.iso](https://mirrors.tuna.tsinghua.edu.cn/proxmox/iso/proxmox-ve_6.3-1.iso)
 
-先在本地尝试，需要一个测试用电脑，我大一用的老笔记本挺合适的。2021/2/23晚重新启用老电脑
+#### 烧写镜像
+
+##### Using Etcher
+
+Etcher works out of the box. Download Etcher from [https://etcher.io](https://etcher.io/). It will guide you through the process of selecting the ISO and your USB Drive.
+
+##### Using Rufus
+
+Rufus is a more lightweight alternative, but you need to use the **DD mode** to make it work. Download Rufus from https://rufus.ie/. Either install it or use the portable version. Select the destination drive and the Proxmox VE ISO file.
+
+Once you *Start* you have to click *No* on the dialog asking to download a different version of GRUB. In the next dialog select the *DD* mode.
