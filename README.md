@@ -940,8 +940,6 @@ KVM虚拟机选择
 
 先在本地尝试，需要一个测试用电脑，我大一用的老笔记本挺合适的。2021/2/23晚重新启用老电脑
 
-### ProxmoxVE 6
-
 https://www.proxmox.com/en/
 
 教程：基于Debian10搭建ProxmoxVE 6虚拟化环境 https://www.jianshu.com/p/411e66dba2b2
@@ -950,13 +948,13 @@ https://www.proxmox.com/en/
 
 [proxmox | 镜像站使用帮助 | 清华大学开源软件镜像站](https://mirrors.tuna.tsinghua.edu.cn/help/proxmox/)
 
-#### 烧写镜像
+### 烧写镜像
 
-##### Using Etcher
+#### Using Etcher
 
 Etcher works out of the box. Download Etcher from [https://etcher.io](https://etcher.io/). It will guide you through the process of selecting the ISO and your USB Drive.
 
-##### Using Rufus
+#### Using Rufus
 
 Rufus is a more lightweight alternative, but you need to use the **DD mode** to make it work. Download Rufus from https://rufus.ie/. Either install it or use the portable version. Select the destination drive and the Proxmox VE ISO file.
 
@@ -964,13 +962,13 @@ Once you *Start* you have to click *No* on the dialog asking to download a diffe
 
 插上去安装，按照提示安就好，最后通过https:// IP :8006 访问控制台。
 
-#### 在Debian之上安装PVE
+### 在Debian之上安装PVE
 
 [Install Proxmox VE on Debian Buster](https://pve.proxmox.com/wiki/Install_Proxmox_VE_on_Debian_Buster)
 
 先尝试一下这个
 
-#### Proxmox 镜像使用帮助
+### Proxmox 镜像使用帮助
 
 新建 `/etc/apt/sources.list.d/pve-no-subscription.list`，内容为：（Debian 10）
 
@@ -979,3 +977,9 @@ deb https://mirrors.tuna.tsinghua.edu.cn/proxmox/debian buster pve-no-subscripti
 ```
 
 ISO安装文件下载：https://mirrors.tuna.tsinghua.edu.cn/proxmox/iso/
+
+### R720上Proxmox的问题
+
+貌似Proxmox识别到的是R720的内网IP，而不是接入的网口的IP，所以从其他电脑无法访问。
+
+https://forum.proxmox.com/threads/fresh-install-sees-network-but-not-internet.83670/
