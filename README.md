@@ -103,6 +103,10 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/23 装好了Debian KDE 图形化系统，开始探索如何装虚拟化环境、网站部署
 
+2021/2/24 开始部署Proxmox VE虚拟化服务，遇到了网关和DNS一系列问题
+
+2021/2/25 两网站备案成功
+
 
 
 ## To Do List
@@ -697,6 +701,12 @@ ssh -N -L 8080:127.0.0.1:8080 root@47.94.150.220
 - [ ] E-mail系统
 - [ ] iTag系统
 - [ ] 私信系统
+
+
+
+### 备案相关注意事项：
+
+[【备案】关于网站主页下方标明备案编号的通知（2020年12月28日）](https://help.aliyun.com/noticelist/articleid/1060773630.html)
 
 
 
