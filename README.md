@@ -974,6 +974,8 @@ KVM虚拟机选择
 
 https://www.proxmox.com/en/
 
+[Proxmox VE Wiki](https://pve.proxmox.com/wiki/Main_Page)
+
 教程：基于Debian10搭建ProxmoxVE 6虚拟化环境 https://www.jianshu.com/p/411e66dba2b2
 
 下载ISO镜像，可以选择清华TUNA源[proxmox-ve_6.3-1.iso](https://mirrors.tuna.tsinghua.edu.cn/proxmox/iso/proxmox-ve_6.3-1.iso)
