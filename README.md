@@ -1113,3 +1113,4 @@ opkg install openvpn-openssl
 opkg install luci-app-openvpn
 ```
 
+也完全可以用图形化界面来搞，搞完重启就好。
