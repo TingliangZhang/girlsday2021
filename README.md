@@ -1106,6 +1106,12 @@ du -sh * | sort -n # 统计当前文件夹(目录)大小，并按文件大小排
 
 
 
+使用Debian Live安装好之后重启，进到了tty1命令行而非KDE GUI，得想办法启动KDE桌面环境
+
+明天再搞
+
+
+
 ## Nano Pi
 
 因为遇到校园网问题：(IP地址异常，请重新拿地址) E2833: Your IP address is not in the dhcp table. Maybe you need to renew the IP address.
