@@ -105,7 +105,7 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/24 开始部署Proxmox VE虚拟化服务，遇到了网关和DNS一系列问题
 
-2021/2/25 两网站备案成功
+2021/2/25 两网站备案成功，但是服务器还是没跑起来，考虑回退回Debian Buster单系统，继续部署网站。
 
 
 
@@ -502,7 +502,7 @@ https://lceda.cn/OSHWHubkai-yuan-ying-jian/li-chuangeda-chi-zi
 
 Github and KiCAD
 
-[PCBruler Github Repo](https://github.com/jbtronics/PCBruler)  [PCBrulerS Project Intro](https://hackaday.io/project/25482-pcbrulers)
+[PCBruler Github Repo](https://github.com/jbtronics/PCBruler)  [PCBrulerS Project Intro](https://hackaday.io/project/25482-pcbrulers) 准备主要参考这一个
 
 [PCB Business Card Ruler With QR and NFC](https://www.instructables.com/PCB-Business-Card-Ruler-With-QR-and-NFC/)
 
