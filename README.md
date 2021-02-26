@@ -1027,6 +1027,8 @@ https://forum.proxmox.com/threads/fresh-install-sees-network-but-not-internet.83
 
 改一下`/etc/network/interfaces`中对应网口的IP，改为对应的IP段，想要的IP，比如`192.168.50.233:22`，网关也改成对应的，比如`192.168.50.1`，Router就会自动给服务器分配一个静态IP。
 
+注意编辑前cp一下备份。VI编辑器，I进入插入模式后，不要动前后左右键。ESC推出到命令模式。X删除当前字符。结合着来，:q!不保存强制退出，:qw保存并退出。
+
 结果从服务器上ping路由器网关`192.168.50.1`，不通，搞了半天发现我网线插到了2号网卡上面，刚刚我配置的是1号卡。。。
 
 https://192.168.50.233:8006/
@@ -1036,6 +1038,20 @@ https://192.168.50.233:8006/
 Default login is "root" (realm *PAM*) and the root password is defined during the installation process.
 
 
+
+现在问题有俩，一个是DNS有毒，另一个是无法挂载exFAT格式的移动硬盘拷子系统镜像。
+
+ping百度的IP能ping通，说明连上了公网，但是`apt-get update`全不行，说明DNS有问题。
+
+编辑`/etc/resolv.conf`换用tuna的DNS：`101.6.6.6`
+
+之后
+
+```sh
+service networking restart #重启网络
+```
+
+终于可以`apt-get update`了！
 
 ## Nano Pi
 
