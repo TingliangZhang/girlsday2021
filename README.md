@@ -1085,6 +1085,8 @@ cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8
 
 草，其实双击左边的Server View-interaction-local可以上传iso，而且点interaction右上角的Shell-xterm.js或者左侧标签页的Shell还可以远程命令行。我跑来跑去真锻炼身体。。。
 
+大草，甚至能在GUI下面改DNS。
+
 
 
 ## Nano Pi
