@@ -1087,6 +1087,13 @@ cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8
 
 大草，甚至能在GUI下面改DNS。
 
+！注意，PVE自带的GUI上传有问题，大于2G的iso会被只传1G不到，所以还是要直接cp。附带几个命令看是不是拷成功了。
+
+```sh
+du -sh # 查看文件夹大小
+du -sh * | sort -n # 统计当前文件夹(目录)大小，并按文件大小排序
+```
+
 
 
 ## Nano Pi
