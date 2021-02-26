@@ -107,6 +107,8 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/25 两网站备案成功，但是服务器还是没跑起来，考虑回退回Debian Buster单系统，继续部署网站。
 
+2021/2/26 开始第二个版本的PCB，准备采用黑色Silkskin，银色Paste，背面参考PCB尺子的设计。同时写社交模式。
+
 
 
 ## To Do List
