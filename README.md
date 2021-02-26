@@ -1114,3 +1114,14 @@ opkg install luci-app-openvpn
 ```
 
 也完全可以用图形化界面来搞，搞完重启就好。
+
+注意配置Auth
+
+```shell
+auth-user-pass /etc/openvpn/Skyworks.auth
+```
+
+另外注意用Ubuntu的那个配置文件，复制粘贴进去，才能跑。
+
+但是一直AUTH_fail不知道为啥了
+
