@@ -1053,6 +1053,19 @@ service networking restart #重启网络
 
 终于可以`apt-get update`了！
 
+Debian10尝试重启没啥问题，不过Debian8和9貌似直接编辑`/etc/resolv.conf`重启后会重置，Debian 永久修改 DNS需要安装resolvconf包
+
+```shell
+apt-get install resolvconf -y
+nano /etc/resolvconf/resolv.conf.d/head
+prepend nameserver 101.6.6.6 #或者直接加一行
+reboot #重启
+```
+
+
+
+
+
 ## Nano Pi
 
 因为遇到校园网问题：(IP地址异常，请重新拿地址) E2833: Your IP address is not in the dhcp table. Maybe you need to renew the IP address.
