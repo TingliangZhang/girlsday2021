@@ -500,6 +500,10 @@ NFC Tag估计是用STM32搞的，用NFC Tools Pro读取得到型号，是一个N
 
 https://lceda.cn/OSHWHubkai-yuan-ying-jian/li-chuangeda-chi-zi
 
+Github上的[PCBruler](https://github.com/jbtronics/PCBruler)
+
+[Adafruit-PCB-Ruler](https://github.com/adafruit/Adafruit-PCB-Ruler)
+
 
 
 ## V4钥匙链设计
