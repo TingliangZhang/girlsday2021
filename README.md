@@ -1079,7 +1079,7 @@ ls
 cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8.0-amd64-kde+nonfree.iso
 ```
 
-但是u其实并不行，还是找不到iso，之后再说吧。
+但是u其实并不行，还是找不到iso，之后再说吧。哦，从Bug的GUI上传了之后能显示了。
 
 
 
@@ -1093,6 +1093,10 @@ cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8
 du -sh # 查看文件夹大小
 du -sh * | sort -n # 统计当前文件夹(目录)大小，并按文件大小排序
 ```
+
+
+
+开始创建VM，起名叫Debian，选择debian-live-10.8.0-amd64-kde+nonfree.iso镜像，硬盘给100G，CPU给两块各4核，内存给4G，其他默认就好。Start after create之后用noVNC连接就能有远程桌面啦！
 
 
 
