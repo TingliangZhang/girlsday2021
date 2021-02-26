@@ -1083,6 +1083,10 @@ cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8
 
 
 
+草，其实双击左边的Server View-interaction-local可以上传iso，而且点interaction右上角的Shell-xterm.js或者左侧标签页的Shell还可以远程命令行。我跑来跑去真锻炼身体。。。
+
+
+
 ## Nano Pi
 
 因为遇到校园网问题：(IP地址异常，请重新拿地址) E2833: Your IP address is not in the dhcp table. Maybe you need to renew the IP address.
