@@ -1125,3 +1125,19 @@ auth-user-pass /etc/openvpn/Skyworks.auth
 
 但是一直AUTH_fail不知道为啥了
 
+
+
+## Debian相关
+
+安装OpenVPN和RSA
+
+```shell
+# 安装OpenVPN和RSA
+sudo apt-get install openvpn
+# 复制粘贴配置文件
+sudo cp skyworks.conf
+# 可选添加一个auth-user-pass文件，注意搞完全地址
+auth-user-pass /etc/openvpn/Skyworks.auth
+# 启动服务
+sudo openvpn --config /etc/openvpn/skyworks.conf
+```
