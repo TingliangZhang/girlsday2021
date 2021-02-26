@@ -1022,3 +1022,94 @@ R720上Proxmox的问题
 貌似Proxmox识别到的是R720的内网IP，而不是接入的网口的IP，所以从其他电脑无法访问。
 
 https://forum.proxmox.com/threads/fresh-install-sees-network-but-not-internet.83670/
+
+
+
+## Nano Pi
+
+因为遇到校园网问题：(IP地址异常，请重新拿地址) E2833: Your IP address is not in the dhcp table. Maybe you need to renew the IP address.
+
+配置OpenVPN到工场暂时用一段时间。
+
+玩转NanoPi R2S
+
+中文维基 [NanoPi R2S/zh](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S/zh)
+
+英文维基 [NanoPi R2S](http://wiki.friendlyarm.com/wiki/index.php/NanoPi_R2S)
+
+SD卡自带FriendlyCore
+
+FriendlyARM   NanoPi R2S 的核心  Rockchip RK3328 是 armv8 架构，所有智能用Openwrt官方的snapshot，还是刷FriendlyWrt吧。
+
+### 基本使用
+
+在电脑浏览器上输入以下网址即可进入FriendlyWrt管理页面:
+
+- http://friendlywrt/
+- http://192.168.2.1/
+
+升级所有的软件包（慎用）
+
+```sh
+opkg update
+opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade 
+```
+
+升级之后万年起不来，重新烧写固件qwq
+
+[FriendlyCore](http://wiki.friendlyarm.com/wiki/index.php/FriendlyCore_(based_on_ubuntu-core_with_Qt)) (based on ubuntu-core with Qt)是开发用的核心，FriendlyWrt的使用基本上和Openwrt一致。
+
+
+
+### 安全的关机操作
+
+进入ttyd终端，输入poweroff命令敲回车，待led灯熄灭，再拔开电源。
+
+
+
+### 建议的安全性设置
+
+以下设置事项非常建议在将 NanoPi-R2S 接入互联网之前完成，因为在空密码或弱密码的状态下将NanoPi-R2S接入互联网，极易受到网络攻击。
+
+- 设置一个安全的密码
+
+进入 系统->管理权 界面设置密码。
+
+- 禁止从wan访问ssh，更换端口
+
+进入 系统->管理权->SSH访问，将接口限制为 lan，将端口设置为其他非常用端口，例如 23333。
+
+- 只允许本地设备访问luci
+
+编辑 /etc/config/uhttpd，将原来的0.0.0.0和[::]地址改为本地lan的地址，例如：
+
+```
+	# HTTP listen addresses, multiple allowed
+	list listen_http	192.168.2.1:80
+	list listen_http	[fd00:ab:cd::1]:80
+ 
+	# HTTPS listen addresses, multiple allowed
+	list listen_https	192.168.2.1:443
+	list listen_https	[fd00:ab:cd::1]:443
+```
+
+完成后重启服务：
+
+```
+/etc/init.d/uhttpd restart
+```
+
+
+
+### OpenVPN client using LuCI
+
+https://openwrt.org/docs/guide-user/services/vpn/openvpn/client-luci
+
+Install [openvpn-openssl](https://openwrt.org/packages/pkgdata/openvpn-openssl) and [luci-app-openvpn](https://openwrt.org/packages/pkgdata/luci-app-openvpn) to be able to manage OpenVPN using web interface.
+
+```sh
+opkg update
+opkg install openvpn-openssl
+opkg install luci-app-openvpn
+```
+
