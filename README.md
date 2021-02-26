@@ -492,6 +492,16 @@ NFC Tag估计是用STM32搞的，用NFC Tools Pro读取得到型号，是一个N
 
 
 
+背面参考PCB尺子的设计
+
+最典型的就是NVIDIA的尺子，但是可能找不到源文件，只能找类似的参考。
+
+嘉立创PCB
+
+https://lceda.cn/OSHWHubkai-yuan-ying-jian/li-chuangeda-chi-zi
+
+
+
 ## V4钥匙链设计
 
 缩小钥匙孔、线圈、整个的尺寸，到30x30cm，以便一个10x10的上面能打9个。
