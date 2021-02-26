@@ -1098,6 +1098,10 @@ du -sh * | sort -n # 统计当前文件夹(目录)大小，并按文件大小排
 
 开始创建VM，起名叫Debian，选择debian-live-10.8.0-amd64-kde+nonfree.iso镜像，硬盘给100G，CPU给两块各4核，内存给4G，其他默认就好。Start after create之后用noVNC连接就能有远程桌面啦！
 
+![image-20210226220548336](image-20210226220548336.png)
+
+人生中第一台服务器和虚拟化的子系统，太快乐了！
+
 
 
 ## Nano Pi
