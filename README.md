@@ -500,11 +500,17 @@ NFC Tag估计是用STM32搞的，用NFC Tools Pro读取得到型号，是一个N
 
 https://lceda.cn/OSHWHubkai-yuan-ying-jian/li-chuangeda-chi-zi
 
-Github上的[PCBruler](https://github.com/jbtronics/PCBruler)
+Github and KiCAD
+
+[PCBruler Github Repo](https://github.com/jbtronics/PCBruler)  [PCBrulerS Project Intro](https://hackaday.io/project/25482-pcbrulers)
+
+[PCB Business Card Ruler With QR and NFC](https://www.instructables.com/PCB-Business-Card-Ruler-With-QR-and-NFC/)
+
+Eagle 开源
 
 [Adafruit-PCB-Ruler](https://github.com/adafruit/Adafruit-PCB-Ruler)
 
-
+[SparkFun_PCB_Ruler](https://github.com/sparkfun/SparkFun_PCB_Ruler)
 
 ## V4钥匙链设计
 
