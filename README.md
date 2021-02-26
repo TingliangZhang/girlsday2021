@@ -109,6 +109,8 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021/2/26 开始第二个版本的PCB，准备采用黑色Silkskin，银色Paste，背面参考PCB尺子的设计。同时写社交模式。
 
+2021年2月26日22点前后，人生中第一台自己搭出来的服务器和虚拟化子系统开始运行，快乐！
+
 
 
 ## To Do List
