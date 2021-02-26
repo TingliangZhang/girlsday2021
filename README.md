@@ -1064,6 +1064,23 @@ reboot #重启
 
 
 
+首先，移动硬盘应该是exFAT格式，在Windows上先格式化好。其次需要挂载才能访问，挂载是到特定的文件夹中。
+
+应该是把需要的iso文件放到`/var/lib/vz/image`中，即PVE的Storage-Directory-local，创建VM时会在这个文件夹下面去找，应该可以直接把移动硬盘挂载到这个路径里面，但是我还是cp一下，以备之后使用。具体操作如下：参考https://blog.csdn.net/u010334295/article/details/82592472
+
+```sh
+fdisk -l
+cd ~
+mkdir PortableDisk
+mount /dev/sdb1 PortableDisk
+chmod 777 PortableDisk #可选，复制出来文件不需要，777是最高权限
+cd PortableDisk
+ls
+cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8.0-amd64-kde+nonfree.iso
+```
+
+但是u其实并不行，还是找不到iso，之后再说吧。
+
 
 
 ## Nano Pi
