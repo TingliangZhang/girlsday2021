@@ -1019,9 +1019,13 @@ ISO安装文件下载：https://mirrors.tuna.tsinghua.edu.cn/proxmox/iso/
 
 R720上Proxmox的问题
 
-貌似Proxmox识别到的是R720的内网IP，而不是接入的网口的IP，所以从其他电脑无法访问。
+貌似Proxmox识别到的IP段不对，是`192.168.100.2`，不是接入的网口的IP `192.168.50.xxx`，所以从其他电脑无法访问，而且会让router无法工作。
 
 https://forum.proxmox.com/threads/fresh-install-sees-network-but-not-internet.83670/
+
+改一下`/etc/network/interfaces`中对应网口的IP，改为对应的IP段，想要的IP，比如`192.168.50.233:22`，网关也改成对应的，比如`192.168.50.1`，Router就会自动给服务器分配一个静态IP。
+
+结果从服务器上ping路由器网关`192.168.50.1`，不通，搞了半天发现我网线插到了2号网卡上面，刚刚我配置的是1号卡。。。
 
 
 
