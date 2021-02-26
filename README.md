@@ -1029,6 +1029,12 @@ https://forum.proxmox.com/threads/fresh-install-sees-network-but-not-internet.83
 
 结果从服务器上ping路由器网关`192.168.50.1`，不通，搞了半天发现我网线插到了2号网卡上面，刚刚我配置的是1号卡。。。
 
+https://192.168.50.233:8006/
+
+在局域网下其他计算机浏览器中访问此页面即可进入管理页面，注意是HTTPS！
+
+Default login is "root" (realm *PAM*) and the root password is defined during the installation process.
+
 
 
 ## Nano Pi
