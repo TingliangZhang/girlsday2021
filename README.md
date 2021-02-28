@@ -1228,3 +1228,241 @@ auth-user-pass /etc/openvpn/Skyworks.auth
 # 启动服务
 sudo openvpn --config /etc/openvpn/skyworks.conf
 ```
+
+
+
+
+
+
+
+## 成本估算
+
+若使用NT2H1311G0DA8(Active)
+
+[贸泽电子 Mouser](https://www.mouser.cn/) ¥0.97293 56,000+ ¥1.01135 28000+
+
+[得捷电子 Digikey](https://www.digikey.cn/) ¥2.22699 28,000+
+
+国产标签更便宜，具体不知道，淘宝成品国产213标签贴纸只要0.5元一个
+
+https://detail.tmall.com/item.htm?id=558903918774&skuId=4662813582687
+
+https://detail.tmall.com/item.htm?id=559010411708&skuId=4490394728367
+
+
+
+## 可以用来扯的之后可能有用的东西
+
+Ansys HFSS 适用于 RF 和无线设计的 3D 电磁场模拟器
+
+https://www.ansys.com/zh-CN/products/electronics/ansys-hfss
+
+参照NXP NTAG的 [应用说明](https://www.nxp.com.cn/docs/en/application-note/AN11276.zip) 进行HFSS仿真
+
+
+
+## 发布会idea
+
+乔布斯iPhone发布会三种产品复读机，不是三种而是一种产品。
+
+更有豪华至尊暗黑版iTag Pro Max Carbon Plus庭梁签名特别版
+
+良心价，9999 津巴布韦币（也就是0.99RMB）年轻人的第一张Tag，即日起开启线上线下预定封测。
+
+
+
+## 供参考产品
+
+国内平台太多了
+
+https://www.zhihu.com/question/275443233
+
+国外产品：
+
+### Tinder
+
+[Tinder Releases Face to Face Video](https://www.tinderpressroom.com/Tinder-Begins-Testing-Face-to-Face-Video) 交友软件都开始搞Video Date了，视频通话少不了啊，其实微信能替代就还好hhh
+
+[Google Store](https://play.google.com/store/apps/details?id=com.tinder) 417w下载量，但是最近多半差评，Bug巨多，Liked没反馈也饱受诟病。
+
+看脸左滑右滑有点草率
+
+### Match
+
+主页宣传：每5段恋爱关系中，就有1段从网路萌芽，其中更多始于Match。
+
+[Match Dating](https://play.google.com/store/apps/details?id=com.match.android.matchmobile): Chat, Date & Meet Someone New 的 Google Store下载量才11w，但最近评价好坏参半
+
+在Match.com，我们给会员提供各种自我陈述空间，让他们展示自我。会员的档案可最多包含26张照片，也可以根据他们要寻找的对象设定喜好。鼠标轻轻一点，会员就能立即看到自己所在地区单身人士的照片和资料。同时，Match.com也理解隐私权和真实性的重要。在Match.com上，所有会员之间的交流都是透过“匿名”电子邮件系统实现。我们所有会员的姓名和联系方式均保持保密状态，直到此会员自己决定向某位潜在匹配对象公开这些讯息。
+
+### Hinge - The dating app designed to be deleted
+
+https://hinge.co/
+
+https://play.google.com/store/apps/details?id=co.hinge.app&hl=en&gl=US
+
+https://www.pcmag.com/reviews/hinge
+
+更详细的个人资料，人工智能匹配算法，稍少的Like限制（10个也太少了，20个一个月20刀太贵了）
+
+约会前后发放调查问卷，进行行为学调查。收集用户数据，改善服务提供模式。还有个Lab俩人像模像样研究
+
+约会前冥想服务。联名馊主意
+
+估计已经凉凉了，盈利模式太显而易见，割韭菜让用户都差评了，一共不到15w用户。
+
+
+
+## 网页端
+
+### 框架选择
+
+[React – A JavaScript library for building user interfaces](https://reactjs.org/)
+
+[Vue.js](https://cn.vuejs.org/index.html)
+
+[Angular](https://angular.io/)
+
+
+
+[Django](https://www.djangoproject.com/) - The Web framework for perfectionists with deadlines
+
+
+
+### 数据库选择
+
+SQL(Relational Database) or NoSQL(Non-Relational Database)
+
+[What is a database in under 4 minutes](https://www.youtube.com/watch?v=Tk1t3WKK-ZY)
+
+#### NoSQL
+
+[MongoDB](https://www.mongodb.com)
+
+[Apache CouchDB](http://couchdb.apache.org/)
+
+[Amazon DynamoDB | NoSQL Key-Value Database](https://aws.amazon.com/dynamodb/)
+
+#### SQL
+
+[PostgreSQL: The World's Most Advanced Open Source Relational Database](https://www.postgresql.org/)
+
+[SQL Server 2019 | Microsoft](https://www.microsoft.com/en-us/sql-server/sql-server-2019)
+
+[MySQL](https://www.mysql.com/)
+
+
+
+### React入门
+
+[Tutorial: Intro to React](https://reactjs.org/tutorial/tutorial.html)
+
+If you need to review JavaScript, we recommend reading [this guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript).
+
+[Next.js](https://nextjs.org/) is a popular and lightweight framework for **static and server‑rendered applications** built with React. It includes **styling and routing solutions** out of the box, and assumes that you’re using [Node.js](https://nodejs.org/) as the server environment.
+
+Learn Next.js from [its official guide](https://nextjs.org/learn/).
+
+
+
+### 傻瓜式操作
+
+[Free Website Builder | Create a Free Website | Wix.com](https://www.wix.com/)
+
+[WordPress.com: Create a Free Website or Blog](https://wordpress.com/)
+
+
+
+### 需求
+
+实现
+
+用户新Tag拿到手时候扫描Tag，数据库查询UID是否被注册用户绑定，并结合密钥验真。弹出注册或登录页面，如果已经登陆使用Cookie登录。
+
+登陆后用户可以填写自己的个人信息，组织并选择这个名片能访问的个人信息，生成类似于个人主页门户的页面，预览并确认后，数据库记录数据和顺序。
+
+收到Tag的另一用户自行NFC读取到特定网址+ID+密钥的时候，能弹出社交信息分享页面。
+
+如果是可复用的，可以设置页面有效期，在一段时间后密钥更换，使用原链接和密钥地址无法访问或只能访问原先定义的信息。
+
+如果是扫码，逻辑基本一致，针对手机太老没有NFC功能的提供二维码分享功能，但是是阉割版，无法更改二维码的信息，故编辑信息不具有保密性，需要在第一次编辑的时候提醒用户。微信扫码提示按右上角由浏览器打开。
+
+准备包含的社交软件有：
+
+1. 微信
+2. QQ
+3. TIM
+4. Telegram
+5. 微博
+6. Linkedin
+7. Instagram
+8. 钉钉
+9. 飞书
+10. 哔哩哔哩
+11. 个人网站
+12. 斗鱼直播
+13. Steam
+14. Skype
+15. Facebook
+16. Twitter
+17. Github
+18. Slack
+19. Snapchat
+20. Reddit
+21. Twitch
+22. Google+
+23. Pinterest
+24. Dribbble
+25. Flickr
+26. Tumblr
+27. 作品集网站叫啥我忘记了
+
+## UI和UX设计 Using Figma
+
+[Figma: the collaborative interface design tool.](https://www.figma.com/)
+
+Figma有教育版，免费用。在申请教育版的时候可以把申请年限填到最长，edu邮箱自动审核。
+
+[FigmaChina：Figma 中文网](https://figmachina.com/)
+
+Figma有些挺好的模板可以用
+
+[UI Prep: The Best Design System UI Kit for Figma](https://www.uiprep.com)
+
+系统字体在里面。Microsoft Yahei就好
+
+### NFC
+
+https://developer.apple.com/design/human-interface-guidelines/ios/user-interaction/near-field-communication/
+
+
+
+### 参考项目示例
+
+[(Variants) iOS & iPadOS 14 UI Kit for Figma](https://www.figma.com/community/file/858143367356468985/(Variants)-iOS-%26-iPadOS-14-UI-Kit-for-Figma)
+
+Prototyping in Figma (Offical Tutorial)
+
+[coolicons | Free Iconset](https://www.figma.com/community/file/800815864899415771/coolicons-%7C-Free-Iconset)
+
+[Figma Charts Infographics UI kit](https://www.figma.com/community/file/855517047816771255/Figma-Charts-Infographics-UI-kit)
+
+[Simple Profile Icebreaker Activity](https://www.figma.com/community/file/798962767266141877/Simple-Profile-Icebreaker-Activity)
+
+
+
+![image-20210213223312396](image-20210213223312396.png)
+
+
+
+### 20210214交互流程会议纪要
+
+新用户引导流程——姓名\默认有个照片（可以是灰色固定也可以是random版的）
+
+新加小预设，比如添加新的社交软件： 选择社交软件 => 微信选择预设或新建预设
+
+卡片管理-不同预设，包括工作用、社交用等区别，以及可以禁用和启用某卡片
+
+预设模块化
+
+![image-20210214231105723](image-20210214231105723.png)
