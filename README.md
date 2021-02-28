@@ -1081,7 +1081,7 @@ ls
 cp ./debian-live-10.8.0-amd64-kde+nonfree.iso /var/lib/vz/image/debian-live-10.8.0-amd64-kde+nonfree.iso
 ```
 
-但是u其实并不行，还是找不到iso，之后再说吧。哦，从Bug的GUI上传了之后能显示了。
+但是u其实并不行，还是找不到iso，之后再说吧。哦，从Bug的GUI上传了之后能显示了。所以需要先上传再拷，同名文件覆盖，就能在VM创建界面看到了
 
 
 
