@@ -109,28 +109,6 @@ Wire Wire Line
 Wire Wire Line
 	5950 2950 6000 2950
 $Comp
-L MCU_Microchip_ATmega:ATmega2560-16AU U3
-U 1 1 6026EFA2
-P 1950 3800
-F 0 "U3" H 1950 811 50  0000 C CNN
-F 1 "LQFP-100_14x14mm" H 1950 720 50  0000 C CNN
-F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 1950 3800 50  0001 C CIN
-F 3 "https://www.nxp.com/jp/products/microcontrollers-and-processors/power-architecture-processors/qoriq-platforms/p-series/qoriq-p4080-p4040-p4081-multicore-communications-processors:P4080?&tab=Documentation_Tab&linkline=Data-Sheet" H 1950 3800 50  0001 C CNN
-	1    1950 3800
-	1    0    0    -1  
-$EndComp
-$Comp
-L FPGA_Xilinx:XC3S200AN-FT256 U2
-U 1 1 60273413
-P -2200 4050
-F 0 "U2" H -2200 10131 50  0000 C CNN
-F 1 "P4080-BGA1295" H -2200 10040 50  0000 C CNN
-F 2 "Package_BGA:BGA-256_17.0x17.0mm_Layout16x16_P1.0mm_Ball0.5mm_Pad0.4mm_NSMD" H -2150 4200 50  0001 C CNN
-F 3 "https://www.nxp.com/jp/products/microcontrollers-and-processors/power-architecture-processors/qoriq-platforms/p-series/qoriq-p4080-p4040-p4081-multicore-communications-processors:P4080?&tab=Documentation_Tab&linkline=Data-Sheet" H -2150 4200 50  0001 C CNN
-	1    -2200 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L Card:M24LR04E-R U1
 U 1 1 6016B11D
 P 7000 2950
