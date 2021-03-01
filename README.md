@@ -500,6 +500,8 @@ NFC Tag估计是用STM32搞的，用NFC Tools Pro读取得到型号，是一个N
 
 
 
+### V3.1 被抛弃的花里胡哨的PCB信仰尺风格设计
+
 背面参考PCB尺子的设计
 
 最典型的就是NVIDIA的尺子，但是可能找不到源文件，只能找类似的参考。
@@ -519,6 +521,18 @@ Eagle 开源
 [Adafruit-PCB-Ruler](https://github.com/adafruit/Adafruit-PCB-Ruler)
 
 [SparkFun_PCB_Ruler](https://github.com/sparkfun/SparkFun_PCB_Ruler)
+
+
+
+放张图纪念一下一晚上的工作
+
+![image-20210301195152027](image-20210301195152027.png)
+
+
+
+### V3.2版本 简约风设计
+
+考虑电路在背面，个人信息在正面。
 
 
 

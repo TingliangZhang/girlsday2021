@@ -113,7 +113,7 @@ L MCU_Microchip_ATmega:ATmega2560-16AU U3
 U 1 1 6026EFA2
 P 1950 3800
 F 0 "U3" H 1950 811 50  0000 C CNN
-F 1 "P4080-BGA1295" H 1950 720 50  0000 C CNN
+F 1 "LQFP-100_14x14mm" H 1950 720 50  0000 C CNN
 F 2 "Package_QFP:LQFP-100_14x14mm_P0.5mm" H 1950 3800 50  0001 C CIN
 F 3 "https://www.nxp.com/jp/products/microcontrollers-and-processors/power-architecture-processors/qoriq-platforms/p-series/qoriq-p4080-p4040-p4081-multicore-communications-processors:P4080?&tab=Documentation_Tab&linkline=Data-Sheet" H 1950 3800 50  0001 C CNN
 	1    1950 3800
