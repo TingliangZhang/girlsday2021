@@ -285,6 +285,18 @@ Summer主打高校市场：分享校园欢乐日常、大学生专属身份认�
 
 
 
+## 同性交友类
+
+Blued
+
+[Blued官方网站-上小蓝倡导健康生活](https://blued.cn/)
+
+Github(大雾)
+
+豆瓣
+
+
+
 ## 综述
 
 [陌生人社交业务的冰与火](https://zhuanlan.zhihu.com/p/352422530)
