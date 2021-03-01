@@ -516,6 +516,38 @@ Eagle 开源
 
 [SparkFun_PCB_Ruler](https://github.com/sparkfun/SparkFun_PCB_Ruler)
 
+
+
+名片正面信息：
+
+姓名
+
+个人标签，如：
+
+交互设计师，用户体验工程师，网页前端架构师，艺术家，嵌入式工程师
+
+美术农民工，影视包工头，码农，极客
+
+
+
+身份信息：
+
+Tsinghua University
+
+Info Art Design
+
+Interdisciplinary Project ?
+
+
+
+UID?
+
+二维码决定先不做定制化，统一写为interact.cool网址，即跳转到网站登录或APP下载页面，登陆后双方互扫UID码即可。
+
+Designed by Tingliang, Copyright © 2021 Tingliang Zhang CC BY-NC-ND
+
+
+
 ## V4钥匙链设计
 
 缩小钥匙孔、线圈、整个的尺寸，到30x30cm，以便一个10x10的上面能打9个。
