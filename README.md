@@ -111,7 +111,11 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 
 2021年2月26日22点前后，人生中第一台自己搭出来的服务器和虚拟化子系统开始运行，快乐！
 
+2021/2/27 确定正反面的形式，找到PCB Ruler参考
 
+2021/2/28 传媒研究，定义碰一碰陌生人社交
+
+2021/3/1 绘制V3样板
 
 ## To Do List
 
