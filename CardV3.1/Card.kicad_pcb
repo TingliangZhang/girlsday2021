@@ -1,9 +1,9 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.1.6)-1")
+(kicad_pcb (version 20171130) (host pcbnew "(5.1.9)-1")
 
   (general
     (thickness 1.6)
     (drawings 12)
-    (tracks 23)
+    (tracks 22)
     (zones 0)
     (modules 7)
     (nets 10)
@@ -60,7 +60,7 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0)
-    (aux_axis_origin 0 0)
+    (aux_axis_origin 142.8 73.01)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x010fc_ffffffff)
@@ -1759,7 +1759,7 @@
     )
   )
 
-  (gr_text "Designed by Tingliang, Copyright © 2021 Tingliang Zhang CC BY-NC-ND" (at 154 99) (layer B.SilkS)
+  (gr_text T (at 104.14 99.06) (layer B.SilkS) (tstamp 603DD577)
     (effects (font (size 1 1) (thickness 0.2) italic) (justify mirror))
   )
   (gr_text "Info Art Design\n\nTsinghua University" (at 108 97 270) (layer F.SilkS) (tstamp 603CF1DE)
@@ -1780,7 +1780,6 @@
   (gr_arc (start 103.18 96.82) (end 100 96.82) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 60152593))
   (gr_arc (start 182.42 96.82) (end 182.42 100) (angle -90) (layer Edge.Cuts) (width 0.05) (tstamp 60152593))
 
-  (via (at 142.8 73.01) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0))
   (segment (start 125 73) (end 151 99) (width 1) (layer F.Cu) (net 0))
   (via (at 110.991459 59.008541) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 1))
   (segment (start 110.991459 59.076459) (end 110.991459 59.008541) (width 0.5) (layer B.Cu) (net 1))
