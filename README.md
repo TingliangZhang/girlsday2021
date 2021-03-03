@@ -1544,7 +1544,9 @@ https://nginx.org/
 sudo apt-get install nginx
 ```
 
+[Beginner’s Guide](https://nginx.org/en/docs/beginners_guide.html)
 
+Ubuntu的配置文件在 `/etc/nginx/nginx.conf`
 
 ## SSL证书
 
