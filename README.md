@@ -1533,3 +1533,21 @@ Prototyping in Figma (Offical Tutorial)
 
 ![image-20210214231105723](image-20210214231105723.png)
 
+
+
+## Nginx
+
+https://nginx.org/
+
+```sh
+# 安装Nginx
+sudo apt-get install nginx
+```
+
+
+
+## SSL证书
+
+[申请免费DV证书](https://help.aliyun.com/document_detail/156645.html)
+
+[在Apache服务器上安装SSL证书](https://help.aliyun.com/document_detail/98727.html?spm=a2c4g.11186623.6.627.64573ae4z4CWtB)
