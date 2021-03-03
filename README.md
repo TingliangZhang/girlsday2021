@@ -1546,10 +1546,75 @@ sudo apt-get install nginx
 
 [Beginner’s Guide](https://nginx.org/en/docs/beginners_guide.html)
 
-Ubuntu的配置文件在 `/etc/nginx/nginx.conf`
+Ubuntu的配置文件在 `/etc/nginx/nginx.conf`，默认网页在`/var/www/html/`下面，可以修改配置文件改默认网页目录
+
+https://blog.csdn.net/a15005784320/article/details/103437776
+
+
 
 ## SSL证书
 
 [申请免费DV证书](https://help.aliyun.com/document_detail/156645.html)
 
 [在Nginx（或Tengine）服务器上安装证书](https://help.aliyun.com/document_detail/98728.html?spm=a2c4g.11186623.6.631.15b783b5Dhx56s)
+
+阿里云的主机是独立服务器，请参见[步骤2：（可选）在Nginx独立服务器上安装证书](https://help.aliyun.com/document_detail/98728.html?spm=5176.14113079.0.dexternal.3e4756a7McsKjj#section-ydh-4qb-1gb)
+
+
+
+在Nginx安装目录（/etc/nginx/）下创建一个用于存放证书的目录（命名为cert）	
+
+将本地证书文件和密钥文件上传到Nginx服务器的证书目录，即.key和.pem文件
+
+编辑Nginx配置文件（nginx.conf），修改与证书相关的配置内容。
+
+在配置文件中定位到HTTP协议代码片段（`http{}`），并在HTTP协议代码里面添加以下server配置（如果server配置已存在，按照以下注释内容修改相应配置即可）。
+
+```python
+  #以下属性中，以ssl开头的属性表示与证书配置有关。
+  server {
+      listen 443 ssl;
+      #配置HTTPS的默认访问端口为443。
+      #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
+      #如果您使用Nginx 1.15.0及以上版本，请使用listen 443 ssl代替listen 443和ssl on。
+      server_name interact.cool; #需要将yourdomain.com替换成证书绑定的域名。
+      root html;
+      index index.html index.htm;
+      ssl_certificate cert/5265802_interact.cool.pem;  #需要将cert-file-name.pem替换成已上传的证书文件的名称。
+      ssl_certificate_key cert/5265802_interact.cool.key; #需要将cert-file-name.key替换成已上传的证书密钥文件的名称。
+      ssl_session_timeout 5m;
+      ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+      #表示使用的加密套件的类型。
+      ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #表示使用的TLS协议的类型。
+      ssl_prefer_server_ciphers on;
+      location / {
+          root html;  #站点目录。
+          index index.html index.htm;
+      }
+  }
+  
+  # 设置HTTP请求自动跳转HTTPS
+  server {
+    listen 80;
+    server_name yourdomain.com; #需要将yourdomain.com替换成证书绑定的域名。
+    rewrite ^(.*)$ https://$host$1; #将所有HTTP请求通过rewrite指令重定向到HTTPS。
+    location / {
+        index index.html index.htm;
+    }
+  }
+```
+
+保存后重启
+
+Changes made in the configuration file will not be applied until the command to reload configuration is sent to nginx or it is restarted. To reload configuration, execute:
+
+```sh
+nginx -s reload
+```
+
+执行以下命令，重启Nginx服务。
+
+```sh
+cd /usr/local/nginx/sbin  #进入Nginx服务的可执行目录。
+./nginx -s reload  #重新载入配置文件。
+```
