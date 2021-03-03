@@ -1604,7 +1604,7 @@ https://blog.csdn.net/a15005784320/article/details/103437776
   }
 ```
 
-保存后重启
+保存后重启Nginx服务
 
 Changes made in the configuration file will not be applied until the command to reload configuration is sent to nginx or it is restarted. To reload configuration, execute:
 
@@ -1612,9 +1612,4 @@ Changes made in the configuration file will not be applied until the command to 
 nginx -s reload
 ```
 
-执行以下命令，重启Nginx服务。
 
-```sh
-cd /usr/local/nginx/sbin  #进入Nginx服务的可执行目录。
-./nginx -s reload  #重新载入配置文件。
-```
