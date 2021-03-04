@@ -1642,3 +1642,12 @@ nginx -s reload
 > That’s it! You’re ready to start using Jekyll.
 
 [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
+
+直接clone Github repo并且用他自带的`_config.yml`和`Gemfile`
+
+```sh
+git clone https://github.com/mmistakes/minimal-mistakes.git
+bundle
+bundle exec jekyll server
+```
+
