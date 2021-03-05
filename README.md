@@ -1676,7 +1676,7 @@ Installation via RubyInstaller 首先去 https://rubyinstaller.org/downloads/ �
 
 https://segmentfault.com/q/1010000013418668/a-1020000013529937
 
-
+**我选择放弃Windows，直接虚拟机测试吧qwq**
 
 之后在VS Code 路径下 Powershell里面运行即可启动服务器
 
