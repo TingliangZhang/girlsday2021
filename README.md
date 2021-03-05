@@ -1646,6 +1646,7 @@ nginx -s reload
 直接clone Github repo并且用他自带的`_config.yml`和`Gemfile`
 
 ```sh
+sudo apt-get install git
 git clone https://github.com/mmistakes/minimal-mistakes.git
 bundle
 bundle exec jekyll server
