@@ -1670,6 +1670,14 @@ Installation via RubyInstaller 首先去 https://rubyinstaller.org/downloads/ �
 >
 > You may receive an error when checking if Jekyll has been installed properly. Reboot your system and run `jekyll -v` again. If the error persists, please open a [RubyInstaller issue](https://github.com/oneclick/rubyinstaller2/issues/new).
 
+有报错，安不上Jekyll，https://github.com/jekyll/jekyll/issues/7000#issuecomment-617482425 但是默认就是没空格的啊老哥
+
+> Ruby 2.7.x worked for me after I moved the install location to a folder without spaces (D:\Program Files\Ruby -> D:\Ruby) and updated the relevant PATH
+
+https://segmentfault.com/q/1010000013418668/a-1020000013529937
+
+
+
 之后在VS Code 路径下 Powershell里面运行即可启动服务器
 
 ```sh
