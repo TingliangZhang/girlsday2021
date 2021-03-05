@@ -1652,3 +1652,25 @@ bundle
 bundle exec jekyll server
 ```
 
+
+
+## Jekyll On Windows
+
+https://jekyllrb.com/docs/installation/windows/
+
+Installation via RubyInstaller 首先去 https://rubyinstaller.org/downloads/ 下载  [Ruby+Devkit 2.7.2-1 (x64)](https://github.com/oneclick/rubyinstaller2/releases/download/RubyInstaller-2.7.2-1/rubyinstaller-devkit-2.7.2-1-x64.exe)
+
+> 1. Download and install a **Ruby+Devkit** version from [RubyInstaller Downloads](https://rubyinstaller.org/downloads/). Use default options for installation.
+> 2. Run the `ridk install` step on the last stage of the installation wizard. This is needed for installing gems with native extensions. You can find additional information regarding this in the [RubyInstaller Documentation](https://github.com/oneclick/rubyinstaller2#using-the-installer-on-a-target-system)
+> 3. Open a new command prompt window from the start menu, so that changes to the `PATH` environment variable becomes effective. Install Jekyll and Bundler using `gem install jekyll bundler`
+> 4. Check if Jekyll has been installed properly: `jekyll -v`
+
+之后在VS Code 路径下 Powershell里面运行即可启动服务器
+
+```sh
+sudo apt-get install git
+git clone https://github.com/mmistakes/minimal-mistakes.git
+bundle
+bundle exec jekyll server
+```
+
