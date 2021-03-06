@@ -1687,3 +1687,31 @@ bundle
 bundle exec jekyll server
 ```
 
+
+
+## Minimal Mistakes 部署和修改
+
+如上按步骤在Linux系统中安装好Jekyll之后，测试编译一下Test正常与否
+
+直接在git上下载整个Repo：https://github.com/mmistakes/minimal-mistakes
+
+可以选择删掉不必要的内容，比如`/docs`和`/test`文件夹
+
+> Remove the Unnecessary[Permalink](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#remove-the-unnecessary)
+>
+> If you forked or downloaded the `minimal-mistakes-jekyll` repo you can safely remove the following folders and files:
+>
+> - `.editorconfig`
+> - `.gitattributes`
+> - `.github`
+> - `/docs`
+> - `/test`
+> - `CHANGELOG.md`
+> - `minimal-mistakes-jekyll.gemspec`
+> - `README.md`
+> - `screenshot-layouts.png`
+> - `screenshot.png`
+
+开始按照[Configuration](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)的详细说明修改`_config.yml`文件，做网站全局的设定，之后可以尽可能少的改这个文件。
+
+新建一些文件夹，放Post的Readme文件，并在`_config.yml`文件中设置
