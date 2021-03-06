@@ -1719,3 +1719,15 @@ bundle exec jekyll server
 新建一些文件夹，放Post的Readme文件，并在`_config.yml`文件中设置
 
 Comment应用选择开源的[staticman](https://staticman.net/)或者[Facebook](https://developers.facebook.com/docs/plugins/comments)，放弃，太困难了。
+
+
+
+部署到网易云运行bundle的时候如果遇到如下权限错误：
+
+There was an error while trying to write to`/home/admin/girlsday2021/Blog/Gemfile.lock`. It is likely that you need to
+grant write permissions for that path.
+
+可以新建一个Gemfile.lock文件并且把它权限设置为777即可。
+
+之后遇到的`.jekyll-cache (Errno::EACCES)`和`_site`文件夹的权限也同理，直接新建文件夹并给777权限即可。
+
