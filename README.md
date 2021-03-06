@@ -1715,3 +1715,5 @@ bundle exec jekyll server
 开始按照[Configuration](https://mmistakes.github.io/minimal-mistakes/docs/configuration/)的详细说明修改`_config.yml`文件，做网站全局的设定，之后可以尽可能少的改这个文件。
 
 新建一些文件夹，放Post的Readme文件，并在`_config.yml`文件中设置
+
+Comment应用选择开源的[staticman](https://staticman.net/)或者[Facebook](https://developers.facebook.com/docs/plugins/comments)，放弃，太困难了。
