@@ -1641,6 +1641,8 @@ nginx -s reload
 >
 > That’s it! You’re ready to start using Jekyll.
 
+一定注意不要用root账号直接配置bashrc和gem install，不然会报错
+
 [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
 直接clone Github repo并且用他自带的`_config.yml`和`Gemfile`
