@@ -588,7 +588,9 @@ Designed by Tingliang, Copyright © 2021 Tingliang Zhang CC BY-NC-ND
 
 在正面印上未来交互的图案，背面印上二维码。和部分装饰性丝印，比如LQFP-64和BGA-100
 
+天线重新生成一下：0.3mm线宽、0.2mm间距、25*25mm、13圈的线圈，自感4.97uH，接近4.84uH
 
+0.8mm板厚，选择白色或黑色阻焊，3x3V-Cut拼板
 
 ## 服务器搭建
 
