@@ -1552,6 +1552,152 @@ Ubuntu的配置文件在 `/etc/nginx/nginx.conf`，默认网页在`/var/www/html
 
 https://blog.csdn.net/a15005784320/article/details/103437776
 
+主页放在`/home/admin/girlsday2021/WebsiteHome/`
+
+Blog模块放在`/home/admin/girlsday2021/Blog/_site/index.html`可以直接用`bundle exec jekyll build`生成。其实最好用`bundle exec jekyll server`启动服务，之后用转发 http://127.0.0.1:4000/blog/
+
+为了后台运行，使用`bundle exec jekyll server --detach`启动服务：
+
+```sh
+Server detached with pid '49146'. Run `pkill -f jekyll' or `kill -9 49146' to stop the server.
+```
+
+> To apply the new configuration, start nginx if it is not yet started or send the `reload` signal to the nginx’s master process, by executing:
+>
+> > ```
+> > nginx -s reload
+> > ```
+>
+> > In case something does not work as expected, you may try to find out the reason in `access.log` and `error.log` files in the directory `/usr/local/nginx/logs` or `/var/log/nginx`.
+
+目前的配置文件参考`/etc/nginx/nginx.conf`
+
+```python
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+
+	##
+	# Basic Settings
+	##
+
+	sendfile on;
+	tcp_nopush on;
+	tcp_nodelay on;
+	keepalive_timeout 65;
+	types_hash_max_size 2048;
+	# server_tokens off;
+
+	# server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
+
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+
+	##
+	# SSL Settings
+	##
+
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+	ssl_prefer_server_ciphers on;
+
+	##
+	# Logging Settings
+	##
+
+	access_log /var/log/nginx/access.log;
+	error_log /var/log/nginx/error.log;
+
+	##
+	# Gzip Settings
+	##
+
+	gzip on;
+
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+	##
+	# Virtual Host Configs
+	##
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+  
+  #以下属性中，以ssl开头的属性表示与证书配置有关。
+  server {
+      listen 443 ssl;
+      #配置HTTPS的默认访问端口为443。
+      #如果未在此处配置HTTPS的默认访问端口，可能会造成Nginx无法启动。
+      #如果您使用Nginx 1.15.0及以上版本，请使用listen 443 ssl代替listen 443和ssl on。
+      server_name interact.cool; #需要将yourdomain.com替换成证书绑定的域名。
+      root html;
+      index index.html index.htm;
+      ssl_certificate cert/5265802_interact.cool.pem;  #需要将cert-file-name.pem替换成已上传的证书文件的名称。
+      ssl_certificate_key cert/5265802_interact.cool.key; #需要将cert-file-name.key替换成已上传的证书密钥文件的名称。
+      ssl_session_timeout 5m;
+      ssl_ciphers ECDHE-RSA-AES128-GCM-SHA256:ECDHE:ECDH:AES:HIGH:!NULL:!aNULL:!MD5:!ADH:!RC4;
+      #表示使用的加密套件的类型。
+      ssl_protocols TLSv1 TLSv1.1 TLSv1.2; #表示使用的TLS协议的类型。
+      ssl_prefer_server_ciphers on;
+      location / {
+          root /home/admin/girlsday2021/WebsiteHome/;
+          # root html;  #站点目录。
+          # index index.html index.htm;
+      }
+      location /blog/ {
+          #root /home/admin/girlsday2021/Blog/_site/;  #博客目录。但是没有修饰
+          proxy_pass http://127.0.0.1:4000/blog/;
+      }
+  }
+  
+  # 设置HTTP请求自动跳转HTTPS
+  server {
+    listen 80;
+    server_name interact.cool; #需要将yourdomain.com替换成证书绑定的域名。
+    rewrite ^(.*)$ https://$host$1; #将所有HTTP请求通过rewrite指令重定向到HTTPS。
+    location / {
+        index index.html index.htm;
+    }
+  }
+}
+
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+# 
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+# 
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+# 
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}
+
+```
+
 
 
 ## SSL证书
