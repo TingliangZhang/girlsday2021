@@ -1487,6 +1487,10 @@ Learn Next.js from [its official guide](https://nextjs.org/learn/).
 
 ## UI和UX设计 Using Figma
 
+https://developer.apple.com/design/resources/
+
+Adobe XD
+
 [Figma: the collaborative interface design tool.](https://www.figma.com/)
 
 Figma有教育版，免费用。在申请教育版的时候可以把申请年限填到最长，edu邮箱自动审核。
