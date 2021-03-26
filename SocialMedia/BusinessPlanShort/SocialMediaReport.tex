@@ -35,7 +35,7 @@ iTag是一套从线下开始的微微熟社交生态，希望为用户提供一�
 iTag，她包括三个部分：一个可自定义的电子名片、一个可录入卡片的万能卡包、一个恋爱交友社交软件。
 
 \section{现有产品研究}
-本章我们研究现有的陌生人社交和部分典型的熟人社交软件。
+本章从探探的发展出发，延伸探讨广义上的陌生人社交软件的发展和存在的问题，最后探讨现有软件的问题成因和可能的解决方案。
 
 \subsection{陌生人社交定义}
 
@@ -49,6 +49,37 @@ iTag，她包括三个部分：一个可自定义的电子名片、一个可录�
 
 其实建立关系只是第一步，更重要的是关系的沉淀。我们希望开发的是一款提供相识机会，但更注重引导关系发展的社交应用。
 
+\subsection{陌生人社交软件发展-以探探为例}
+本章以探探为例，简单梳理陌生人社交软件发展。
+
+探探是中国大陆一款基于地理位置的社交应用程序，由王宇和潘滢创立，于2014年上线，其目标人群定位在20岁至26岁的用户。使用上，探探被认为模仿了同类应用程序Tinder，双方只有互相喜欢，才能开始聊天,因此得名“约炮神器”。探探亦上线了“擦肩而过”和“匿名表白”功能，并做了一系列尝试来规范用户行为。探探推出后在85后到90后的用户群中较为热门，但其“匿名表白”功能曾引发侵权争议，其安全性也遭到过质疑。
+
+2018年2月23日陌陌斥资7.71亿美元收购探探科技（北京）有限公司。交易成功后，探探团队继续独立运营产品和品牌。\cite{MoMoHistory}
+
+探探被认为模仿了美国同类应用程序Tinder，其主要基于地理位置和大数据平台，向用户提供个性化推荐。其在交互方式上采用了简单的动作设置：如果喜欢某一对象，就往右滑，不喜欢则往左滑。之后，系统自动进行配对，如果双方互相喜欢，系统会明确告知给两个用户，双方才能开始聊天，否则彼此不会收到任何消息。
+
+此外，探探亦上线了“擦肩而过”和“匿名表白”功能，“擦肩而过”是探探开发的一项基于GPS系统的服务，如果有喜欢的人从附近经过，探探会进行提示并显示距离。“匿名表白”是探探基于手机通信录的一种匿名表达爱慕之情的功能，使用该功能，用户可以对通信录的好友匿名表白，并邀请该位好友加入成为探探用户。在使用“匿名表白”功能时，如果被表白的一方尚未注册探探账户，系统会自动发送暗恋短信到被表白一方的手机上，此举引发了侵权争议，存在违法嫌疑。
+
+信息安全性方面，企业家拉里·萨利布拉使用Xcode对软件进行逆向工程时发现该软件缺乏加密措施，因此，稍有技术的黑客即可获取用户的用户名、密码、电话号码，甚至对话。
+
+2019年06月28日，国家网信办发布，其会同有关部门，针对网络音频乱象启动专项整治行动。根据群众举报线索，经核查取证，首批依法依规对吱呀、Soul、语玩、一说FM等26款传播历史虚无主义、淫秽色情内容的违法违规音频平台，分别采取了约谈、下架、关停服务等阶梯处罚，对音频行业进行全面集中整治。有关负责人表示，此次专项整治不仅要坚决有效遏制行业乱象，也要积极规范行业发展，促进网络生态持续向好。\cite{Audio}
+
+根据《关于开展App违法违规收集使用个人信息专项治理的公告》，受中央网信办、工信部、公安部、市场监管总局委托，全国信息安全标准化技术委员会、中国消费者协会、中国互联网协会、中国网络空间安全协会成立App专项治理工作组，对用户数量大、与民众生活密切相关的App隐私政策和个人信息收集使用情况进行评估。2019年7月12日，包括探探等在内的30款App因违反《网络安全法》关于收集使用个人信息的相关规定，被通报30日内完成整改。\cite{Privacy}
+
+探探部分用户协议摘录如下：
+
+\begin{tcolorbox}
+    3.1 为了能使用本服务，您需要注册探探帐号，应当使用手机号码绑定注册，请用户使用尚未与“探探”帐号绑定的手机号码，以及未被探探文化封禁的手机号码注册“探探”帐号。根据法律法规的要求，探探文化可以根据用户需求或产品需要对帐号注册和绑定的方式进行变更，您应在法律法规的要求下予以配合。
+
+    3.2 “探探”系基于地理位置的移动社交产品，用户注册时应当授权探探文化公开及使用其地理位置信息方可成功注册“探探”帐号。故用户完成注册即表明用户同意探探文化提取、公开及使用用户的地理位置信息。
+
+    3.3 鉴于探探帐号的注册方式，且为了保护您账号的安全，您同意探探文化在注册时使用您提供的手机号码及/或自动提取您的手机号码及您的手机设备识别码等信息用于注册。同时如果您可以选择开启使用某些功能，您同意探探文化取得您的手机通讯录信息以使这些功能可以实现。
+
+    3.4 在用户注册及使用本服务时，探探文化需要搜集能识别用户身份的个人信息以便探探文化可以在必要时联系用户，或为用户提供更好的使用体验。探探文化搜集的信息包括但不限于用户的姓名、性别、年龄、出生日期、身份证号、地址、学校情况、公司情况、所属行业、兴趣爱好、常出没的地方、个人说明；探探文化同意对这些信息的使用将受限于个人隐私信息相关法律和探探隐私政策的约束。\cite{MoMoAgreement}
+\end{tcolorbox}
+
+其实和国内很多软件一样，在安装时索取了远超自己APP需要的权限，当然这和隐私保护的乱象有关，同样的应用在苹果商店就老实很多，比安卓商店索取的权限要少很多。
+
 \subsection{陌生人社交平台分类}
 我将陌生人社交平台分为三类：LBS(Location Based Services,基于位置的服务)社交应用、婚恋市场、兴趣交友。
 
@@ -58,132 +89,20 @@ LBS社交包括Tinder、探探和陌陌、微信附近的人等，主打短期�
 
 兴趣交友类包括Soul、Summer等，本意是兴趣交友，社交资本更为多元，有助于寻找到共同话题。Summer主打高校市场：分享校园欢乐日常、大学生专属身份认证、面向全国高校开放、答题交友。Soul则主打匿名性的轻松感，不用上传头像、视频露脸或者实名。但是这些应用经过一年多的发展，鱼龙混杂的用户涌入，渐渐和探探等同质化。
 
+Tinder的核心是左滑跳过右滑Like的配对机制，只有双方互相Like之后才能开始进一步聊天，后续Tinder还推出了和Facebook Instagram等社交软件的联动，付费版本可以Like更多的人甚至在Like之前看这个人有没有Like你，在2020年因为安全方面的考量，Tinder也推出了一键SOS报警功能。\cite{WikiTinderFeatures}
+在信息安全方面，Tinder也曾爆出不少漏洞，每次打开和进行匹配的精确地理位置甚至聊天视频内容的泄露漏洞，以及卫报记者单人长达800页的用户数据历史，包括时间、地点、个人喜好、受众人群、每个照片浏览时间。一旦这些十分隐私的详尽数据泄露，后果不堪设想。\cite{WikiTinderFeatures}
 
-\subsection{Tinder}
+探探应用中存在大量虚假信息、骗子、甚至聊天机器人。打擦边球构筑的不健康的商业模式。用户粘性有限，商业潜力有限。软件缺乏加密措施，因此，稍有技术的黑客即可获取用户的用户名、密码、电话号码，甚至对话。\cite{WikiTantan}
+陌陌类应用其实依靠的是打擦边球构筑的不健康的商业模式，用户粘性和商业潜力有限。其中大量虚假信息、骗子、甚至聊天机器人，进一步增加了用户对其不信任感。\cite{MoMoWhy}
 
-\begin{tcolorbox}
-    Features
-    \begin{enumerate}
-        \item Swipe is central to Tinder's design. The app's algorithm provides users, swipe right to "like" potential matches and swipe left to continue on their search from the compatible matches.
-        \item Messaging is also a heavily utilized feature. Once a user matches with another user, they're able to exchange text messages on the app.
-        \item Instagram integration enables users to access other users' Instagram profiles.
-        \item Common Connections allows users to see whether they share a mutual Facebook friend with a match (a first-degree connection on Tinder) or when a user and their match have two separate friends who happen to be friends with each other (considered second-degree on Tinder).
-        \item Tinder Gold, introduced worldwide in August 2017, is a premium subscription feature that allows the user to see those who have already liked them before swiping.
-        \item Panic button is introduced in the US from January 2020. The feature will include emergency assistance, location tracking, and photo verification.\cite{WikiTinderFeatures}
-    \end{enumerate}
-\end{tcolorbox}
+以世纪佳缘、百合网等交友软件为代表的婚恋市场婚恋市场则更加功利，用户普遍为30-40岁，有更高的收入，追求相亲的效率。
+但是婚恋网站上面信息不实，婚介和外包由于资源不足合伙骗人，甚至还有金融理财诈骗、传销组织奔现等陷阱，这些因素让婚恋市场的信誉不断受损。\cite{CheatTheLiving}
+知乎上也有大量的关于平台或代理商请的托恶意骗钱行为的例子，比如\url{https://www.zhihu.com/question/37751869}
+婚恋平台上存在大量不实个人信息但是过于严格的筛查审核机制会劝退很多用户，用户不愿意一次性上传过多真实个人信息和照片，如学位证身份证等。\cite{WikiJiayuan}
+盈利主要靠VIP或一对一红娘收费，收费普遍极高，条件差距大的收费更高，甚至于几十万的天价中介费。盈利方式不健康。
 
-Tinder的核心是左滑跳过右滑Like的配对机制，只有双方互相Like之后才能开始进一步聊天，后续Tinder还推出了和Facebook Instagram等社交软件的联动，付费版本可以Like更多的人甚至在Like之前看这个人有没有Like你，在2020年因为安全方面的考量，Tinder也推出了一键SOS报警功能。
-
-\begin{tcolorbox}[breakable]
-    Safety issues
-    \begin{itemize}
-        \item There are also cybersecurity, data privacy, and public health concerns about Tinder. Public health officials in Rhode Island and Utah have claimed that Tinder and similar apps are responsible for an uptick of some STDs. In February 2014, security researchers in New York found a flaw which made it possible to find users' precise locations for between 40 and 165 days. Tinder's spokesperson, Rosette Pambakian, said the issue was resolved within 48 hours. Tinder CEO Sean Rad said in a statement that shortly after being contacted, Tinder implemented specific measures to enhance location security and further obscure location data.
-        \item In August 2016, two engineers found another flaw that showed all users' matches' exact location. The location was updated every time a user logged into the app and it worked even for blocked matches. The issue was detected in March 2016, but it was not fixed until August 2016. In July 2017, a study published in Advances in Intelligent Systems and Computing found that Tinder users are excessively willing to disclose their personally identifiable information. In September 2017, The Guardian published an article by a journalist who requested all data that the Tinder app had recorded about her from the company and found that Tinder stores all user messages, user locations and times, the characteristics of other users who interest a particular user, the characteristics of particular users of interest to other users, and the length of time users spend looking at particular pictures, which for the journalist amounted to 800 pages of detail.
-        \item There have been anti-Tinder online marketing campaigns and websites developed. On June 30, 2014, Tinder's co-founder and former vice president of marketing, Whitney Wolfe, filed a sexual harassment and sex discrimination suit in Los Angeles County Superior Court against IAC-owned Match Group, the parent company of Tinder. The lawsuit alleged that her fellow executives and co-founders Rad and Mateen had engaged in discrimination, sexual harassment, and retaliation against her, while Tinder's corporate supervisor, IAC's Sam Yagan, did nothing. IAC suspended CMO Mateen from his position pending an ongoing investigation, and stated that it "acknowledges that Mateen sent private messages containing 'inappropriate content,' but it believes Mateen, Rad and the company are innocent of the allegations". In December 2018, The Verge reported that Tinder had dismissed Rosette Pambakian, the company's vice president of marketing and communication who had accused Tinder's former CEO Greg Blatt of sexual assault, along with several other employees who were part of the group of Tinder employees who had previously sued the Match Group for 2 billion.\cite{WikiTinderFeatures}
-    \end{itemize}
-\end{tcolorbox}
-
-在信息安全方面，Tinder也曾爆出不少漏洞，每次打开和进行匹配的精确地理位置甚至聊天视频内容的泄露漏洞，以及卫报记者单人长达800页的用户数据历史，包括时间、地点、个人喜好、受众人群、每个照片浏览时间。一旦这些十分隐私的详尽数据泄露，后果不堪设想。
-
-\subsection{探探}
-
-\begin{tcolorbox}
-    探探新增：“擦肩而过”和“匿名表白”功能，“真心话问答”
-
-    “擦肩而过”是探探开发的一项基于GPS系统的服务，如果有喜欢的人从附近经过，探探会进行提示并显示距离。“匿名表白”是探探基于手机通信录的一种匿名表达爱慕之情的功能，使用该功能，用户可以对通信录的好友匿名表白，并邀请该位好友加入成为探探用户。
-
-    根据第三方平台监测数据显示，探探月活跃用户远超以409.4万人排名第二的世纪佳缘，为中国大陆排名第一的婚恋交友类应用。
-
-    探探的“匿名表白”功能曾引发争议，在使用“匿名表白”功能时，如果被表白的一方尚未注册探探账户，系统会自动发送暗恋短信到被表白一方的手机上，此举引发了侵权争议，存在违法嫌疑。此应用的安全性也遭到了质疑，企业家拉里·萨利布拉使用Xcode对软件进行逆向工程时发现该软件缺乏加密措施，因此，稍有技术的黑客即可获取用户的用户名、密码、电话号码，甚至对话。
-
-    除此之外，一些不法分子会使用“探探引流脚本”，向匹配成功的用户发送私信，这种现象也形成了扫号、账号买卖的黑产链。同时，该平台的传播欺诈与色情信息问题也引发关注。据媒体报道，有多名用户通过探探结交了骗子，并深陷网络博彩、“卖茶美女”、股票投资等骗局，造成财产损失。
-
-    2019年4月28日晚，有媒体报道称，应监管部门要求，探探因“传播污秽色情消息”为由，被中国大陆应用商店下架。对此探探就此事回应称“我们会积极配合有关部门的要求”。\cite{WikiTantan}
-\end{tcolorbox}
-
-大量虚假信息、骗子、甚至聊天机器人。打擦边球构筑的不健康的商业模式。用户粘性有限，商业潜力有限。软件缺乏加密措施，因此，稍有技术的黑客即可获取用户的用户名、密码、电话号码，甚至对话。
-
-\begin{tcolorbox}
-    2020年底，齐鲁晚报《“我们这都是通过陌陌招揽生意” 在陌陌“招嫖”明码标价》一文把陌陌推上舆论的风口浪尖，披露其平台上存在招嫖问题。该报记者在陌陌上找到“附近的人”这一栏，随机选取几个“美女”打招呼，收到“明码标价”——500元/2小时。
-
-    随后，新华社等多家媒体进行跟进报道，但陌陌官方并未予以回应。其实，这类招嫖模式，主要得益于陌陌LBS（基于地理位置的服务）功能，该功能也是陌陌早期破局的关键，助力其备受用户追捧。
-
-    要知道，用户在使用App过程中，需要给平台提供地理位置权限，使得聊天人群不再只是天各一方的网友，而是真实可以在线下碰面的人。有了LBS这一杀手锏，陌陌便在陌生人社交市场迅速站稳脚跟，积累不少活跃用户。
-
-    无论是陌陌还是被其收购的探探，它们能够迅速打开市场，对用户的吸引力不言而喻。说白了，这种打擦边球的做法在早期的确会起到刺激作用，但长此以往，陌陌构建的商业模式恐怕不健康。别看陌陌App下载量很高，但用户难以沉淀是一大硬伤。
-
-    或许是看到陌生人社交的局限性，一方面用户规模上不去，一旦陌生用户熟悉后，关系链很容易迁移到微信上，陌陌变相为微信打工，另一方面商业变现潜力也十分有限，因为陌生人之间聊骚带来的用户粘性难以持续。当2016年直播风口出现时，看到机会的陌陌迅速杀入，试图以秀场直播的形式继续玩转荷尔蒙经济。\cite{MoMoWhy}
-\end{tcolorbox}
-
-陌陌类应用其实依靠的是打擦边球构筑的不健康的商业模式，用户粘性和商业潜力有限。其中大量虚假信息、骗子、甚至聊天机器人，进一步增加了用户对其不信任感。
-
-\subsection{世纪佳缘、百合网等交友软件}
-
-婚恋市场婚恋市场更加功利，用户普遍为30-40岁，有更高的收入，追求相亲的效率。
-
-\begin{tcolorbox}
-    网上征婚有一定的可靠性，最终能不能成，还是要看缘分。
-
-    我曾经被红娘半哄半骗着给一个婚介机构当过婚托，后来我才知道，稍微像点样的会员，红娘给他们安排的约会多得能飞起来，但就是不让轻易牵手，就算真看对眼了，也会想办法给搅黄。
-
-    毕竟对于婚介来说，资源是核心。一个婚介生意能不能红火，就看手头上有多少好资源。反正到了最后，只要能够完成合同约定的任务，他们的工作就算是做完了。\cite{CheatTheLiving}
-\end{tcolorbox}
-
-信息不实，婚介和外包合伙骗人，婚介收费按人来，越难的越贵，VIP费用一万起步，甚至有更贵的。金融理财诈骗、传销组织奔现
-
-知乎上有大量的关于平台或代理商请的托恶意骗钱行为的例子，比如\url{https://www.zhihu.com/question/37751869}
-
-
-\begin{tcolorbox}
-    2019年初浙江电视台打假节目《1818黄金眼》开始多集追踪一件吴先生的世纪佳缘相亲纠纷此案也导致世纪佳缘形象重创，事主在网站上注册后被介绍一名对象朱女，对方资料是北大毕业当老师同时父亲是大企业上市公司董事长，但该女子见面后却开始不断索要高价礼物，言行也不像大户人家教养，三天花近三万人民币然而后续蹊跷之处日多，查证过程世纪佳缘一再表示背景百分之百核实正确。\cite{WikiJiayuan}
-\end{tcolorbox}
-
-婚恋平台上存在大量不实个人信息但是过于严格的筛查审核机制会劝退很多用户，用户不愿意一次性上传过多真实个人信息和照片，如学位证身份证等。
-
-而且存在不少诈骗传销等。
-
-盈利主要靠VIP或一对一红娘收费，收费普遍极高，条件差距大的收费更高，甚至于几十万的天价中介费。盈利方式不被大众接受。
-
-\subsection{Soul Summer 等兴趣交友网站}
-
-Soul App通过“智能匹配算法”一键推荐用户可能喜欢的人和内容，帮助用户随时随地和聊得来的朋友沟通交流，降低孤独感，提升每个人的生命质量，让个人更幸福，社会更加和谐美好。
-
-灵魂匹配，属于你的灵魂伴侣。分享生活与热爱。AI 智能精准匹配，随时随地。与志趣相投的 Souler 开启会话，和尬聊说拜拜。匹配的依据是用户在上面做的测试结果，测试一共分为初中高三个阶段，测试结果会包括三观，感情，喜好，品位等多个维度。Soul会根据测试得出的个人特征，选择match率高的对象和用户聊天。
-
-语音匹配 实时社交
-
-开启视频脸基尼，趣味 AR 贴纸和脸基尼为你保护隐私，想要视频却不想露脸？
-
-瞬间广场，分享类型丰富的瞬间，更不要吝惜你的点赞与评论。还有随机电台，精彩瞬间边听边刷。
-
-推荐理由：不用看脸也能聊天。这款app主打灵魂社交的路线，匹配的方式是通过性格测试，甚至连头像都不能用自己的照片。可以当成匿名树洞使用。
-
-但是，类似树洞的匿名性也引出了人性的黑暗面
-
-\begin{tcolorbox}
-    一个灵魂交友的软件硬生生的变成了颜值交友，当然不仅仅如此，据说soul里面男生人均180+，女生人均170+，人均保时捷。在异性交友软件中，这也很正常。但是一张口就小哥哥，小姐姐的叫，交完后开始查户口，查完后又立马要照片，照片看了之后再决定是否继续聊下去是啥意思？还是灵魂交友吗？
-
-    广场上全是低质量的瞬间
-
-    人的恶心，是app的恶心变来的
-
-    和政治有关的不能发，随便沾点东西的就不能发，恶意语言不能发，带友商app链接的不能发
-
-    而且你的图片里带这些字的也不行，我真的吐了
-
-    如果微信的屏蔽等级是0，英雄联盟的屏蔽等级是5，那soul的屏蔽等级得是100
-
-    聊天功能我唯唯诺诺，屏蔽关键词我重拳出击
-
-    女生是高贵冷艳的灵魂选手
-
-    男生是癞蛤蟆想吃天鹅肉的迪奥丝
-
-    刚开始为了口碑，而且进来的人也都三观很正，互相学习，能够坦诚相待。后来为了流量，大量广告，导致鱼龙混杂，聊骚的、约p的啥的都有。低级趣味的人多了，有趣的灵魂也都受不了走了，所以质量大不如前。\cite{Soul}
-\end{tcolorbox}
-
-总的来说，SOUL开始的模式很吸引人，类似树洞的匿名，个人信息的自由，和探探等yp应用区分开了。但是没有树洞的自由，屏蔽词恶心用户。匿名下的乱象丛生令这个平台鱼龙混杂，广场变为寻求满足感的匿名微博式平台。Summer主打高校市场：分享校园欢乐日常、大学生专属身份认证、面向全国高校开放、答题交友趣味刷题.
+SOUL这一兴趣交友网站开始的模式很吸引人，类似树洞的匿名，个人信息的自由，和探探等yp应用区分开了。但是没有树洞的自由，屏蔽词恶心用户。匿名下的乱象丛生令这个平台鱼龙混杂，广场变为寻求满足感的匿名微博式平台。\cite{Soul}
+Summer类似Soul但是主打高校市场，核心功能包括分享校园欢乐日常、大学生专属身份认证、面向全国高校开放、答题交友趣味刷题。但近些年发展也不算很快。
 
 \section{需求和痛点}
 痛点
