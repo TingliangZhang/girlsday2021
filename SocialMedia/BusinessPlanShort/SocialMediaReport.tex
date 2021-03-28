@@ -154,7 +154,14 @@ Summer类似Soul但是主打高校市场，核心功能包括分享校园欢乐�
 
 目前硬件方面，经过五次迭代、仿真和测试，女生节礼物内测卡片使用的PCB基板，以及定制化的丝印和铜层设计。分为两种不同的尺寸：ISO 7813 规范 ID-1 85.60×53.98毫米 银行卡尺寸电子名片，和30x30cm的钥匙链设计。
 
-我们通过计算线圈自感来设计PCB上的铜层线圈尺寸。我们也编写了自动生成NFC线圈的代码，给定线圈尺寸、线宽、线距等参数就可以生成相应线圈。
+我们通过计算线圈自感来设计PCB上的铜层线圈尺寸。我们也编写了自动生成NFC线圈的代码，给定线圈尺寸、线宽、线距等参数就可以生成相应线圈，如图~\ref{NFCAntennaGenerator}所示。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{NFCAntennaGenerator.png}
+    \caption{NFC Antenna Generator} 
+    \label{NFCAntennaGenerator}
+\end{figure}
 
 PCB打样完成后，其上只需要SMT一片ST24 NFC Tag即可使用。
 
@@ -162,7 +169,40 @@ PCB打样完成后，其上只需要SMT一片ST24 NFC Tag即可使用。
 
 初版iTag于2021/03/07女生节作为班级女生的礼物预先发布，正式deliver和发布在03/14 Pi节。
 
+除此之外，我们还有钥匙扣、名片、Cheatsheet等形式的卡片，如图~\ref{Card}所示。值得一提的是，手机壳或手机壳贴纸，以及Magsafe卡包，是很自然的产品形式。
+
+\begin{figure}[htbp]
+    \centering
+    \subfigure[]
+    {
+         \begin{minipage}[b]{0.3\linewidth}
+            \centering
+            \includegraphics[scale=0.025]{CardV1.jpg}
+        \end{minipage}
+    }
+    \subfigure[]
+    {
+        \begin{minipage}[b]{0.3\linewidth}
+            \centering
+            \includegraphics[scale=0.025]{CardV2.jpg}
+        \end{minipage}
+    }
+    \subfigure[]
+    {
+         \begin{minipage}[b]{0.3\linewidth}
+            \centering
+            \includegraphics[scale=0.025]{CardV3.jpg}
+        \end{minipage}
+    }
+    \caption{不同形态的卡片样例}
+    \label{Card}
+\end{figure}
+
 未来我们为了进一步降低成本，将使用国产白卡，即将NFC线圈和芯片封装到塑料或其他材质卡片中的成品。采购价格能低于0.1元每片。在上面可以打印统一的或者个性化的图案。
+
+未来我们会推出类似Fuze的智能款卡片，带有电池、处理器、墨水屏和触摸按键，实现一张卡可切换多张卡，支持录入门卡、会员卡、储值卡等卡片，并且可以随时切换卡片。你的下一个卡包，何必是卡包。
+
+游戏玩家专属卡和联名款卡片也将是未来的一个方向。
 
 \section{软件}
 目前内测阶段我们使用的是网页版，使用VUE.js框架编写，MongoDB数据库存储用户数据，Nginx轻量级Web服务器，阿里云轻量应用服务器转发，本地40线程16TB高性能PVE虚拟化服务器提供服务。顶级域名(interact.cool)已在中国大陆ICP备案，以提供更快更稳定的DNS解析。
@@ -431,11 +471,11 @@ NFC卡片中只有一个带有SHA256加密后的UID信息，链接到特定的�
 \newpage
 \section{附录}
 
-\begin{figure}[htbp]
-    \centering
-    \includegraphics[width=\linewidth]{Login.png}
-    \caption{嘿嘿嘿} 
-    \label{1}
-\end{figure}
+% \begin{figure}[htbp]
+%     \centering
+%     \includegraphics[width=\linewidth]{Login.png}
+%     \caption{嘿嘿嘿} 
+%     \label{1}
+% \end{figure}
 
 \end{document}
