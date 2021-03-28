@@ -153,11 +153,7 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
 
 当用户使用手机扫描NFC标签并读取到里面的网址时，安卓系统会弹出提示，选择对此网站的操作，选择用浏览器打开并勾选总是执行此操作，之后会自动在浏览器中打开链接；苹果系统则会弹出提示，点击即可用默认浏览器打开。如果安装了APP，会直接打开APP并将网址内的加密UID传递给APP。
 
-当识别到是一个未绑定的卡片，会跳转到用户登录和注册页面，如果之前登录过，会直接使用浏览器中的cookie自动登录。这张卡片会绑定到你的账号里，可以在卡片管理页面设置卡片预设和权限以及到期日。
-
-预设界面
-
-如果卡片丢失，可以在卡片管理页面一键禁用此卡片，以保证个人信息安全。
+当识别到是一个未绑定的卡片，会跳转到用户登录和注册页面，如果之前登录过，会直接使用浏览器中的cookie自动登录。这张卡片会绑定到你的账号里，可以在卡片管理页面设置卡片预设和权限以及到期日。如图~\ref{Login}所示。
 
 \begin{figure}[htbp]
     \centering
@@ -186,6 +182,8 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     \label{Login}
 \end{figure}
 
+注册新账号的时候会引导填写姓名和上传头像，为了降低用户的心理负担，可以选择不填写真名，并使用默认的预设图片，如图~\ref{Register}所示。
+
 \begin{figure}[htbp]
     \centering
     \subfigure[]
@@ -212,6 +210,8 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     \caption{注册流程}
     \label{Register}
 \end{figure}
+
+完成后可以生成一个默认的预设界面，可以在这个基础上去添加信息。比如编辑主页背景等。最重要的其实是添加社交软件，可以选择多样的社交软件添加，有完备的import wizard帮助你傻瓜式添加社交账号预设，如图~\ref{EditHomepage}所示。
 
 \begin{figure}[htbp]
     \centering
@@ -240,6 +240,8 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     \label{EditHomepage}
 \end{figure}
 
+一些主页预设样例如图~\ref{HomepageExample}所示，主页的预设自由度非常高，高级用户或者企业用户甚至可以编写更多功能的HTML+Javascript，部署到我们的系统中。
+
 \begin{figure}[htbp]
     \centering
     \subfigure[]
@@ -266,6 +268,8 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     \caption{主页预设样例}
     \label{HomepageExample}
 \end{figure}
+
+卡片管理系统也是保护个人隐私重要的一环，在这里你可以看到拥有的所有卡片，方便改变卡片显示的内容（即实现定义好的预设），同时可以设置权限，即特定的用户可见，如图~\ref{CardManageSystem}所示。如果卡片丢失，可以在卡片管理页面一键禁用此卡片，以保证个人信息安全。
 
 \begin{figure}[htbp]
     \centering
@@ -294,6 +298,8 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     \label{CardManageSystem}
 \end{figure}
 
+简单设置好预设后，这张卡片的链接会自动绑定到你选择的预设页面，当碰一碰其他人的手机时，对方的手机将会提示打开这一页面。微信比较特别，一般时通过扫描二维码或者搜索微信号添加好友，所以会有详尽的引导（保存图片-扫一扫添加）。其他软件如Github、Instagram、Bilibili等都有直链网址，直接打开即可，如图~\ref{ScanProcedure}所示。
+
 \begin{figure}[htbp]
     \centering
     \subfigure[]
@@ -307,7 +313,7 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     {
         \begin{minipage}[b]{.3\linewidth}
             \centering
-            \includegraphics[scale=0.3]{ViewHomePage.png}
+            \includegraphics[scale=0.3]{ViewHomePageSmall.png}
         \end{minipage}
     }
     \subfigure[]
@@ -321,7 +327,7 @@ UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自�
     \label{ScanProcedure}
 \end{figure}
 
-\section{隐私安全}
+在软件部分的最后我们重提隐私安全问题：
 
 如前所述，几乎每一个流行的陌生人社交软件都曾被网络攻击，发生用户隐私数据被窃取或倒卖事件。由于陌生人社交信息数据量大而且敏感，一旦被窃取，可能会用于诈骗甚至可以分析出每个人的偏好，如果公开可能会对用户造成极大的影响，甚至造成社会性死亡。
 
