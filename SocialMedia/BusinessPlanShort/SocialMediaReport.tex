@@ -205,9 +205,17 @@ PCB打样完成后，其上只需要SMT一片ST24 NFC Tag即可使用。
 游戏玩家专属卡和联名款卡片也将是未来的一个方向。
 
 \section{软件}
+
 目前内测阶段我们使用的是网页版，使用VUE.js框架编写，MongoDB数据库存储用户数据，Nginx轻量级Web服务器，阿里云轻量应用服务器转发，本地40线程16TB高性能PVE虚拟化服务器提供服务。顶级域名(interact.cool)已在中国大陆ICP备案，以提供更快更稳定的DNS解析。
 
-UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自然交互原则，为用户提供自然的交互体验。
+UI界面和UX交互流程由用户体验设计师使用Figma设计，遵循自然交互原则，为用户提供自然的交互体验，软件如图~\ref{iTagAPP}所示。
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=\linewidth]{iTag.png}
+    \caption{iTag软件} 
+    \label{iTagAPP}
+\end{figure}
 
 当用户使用手机扫描NFC标签并读取到里面的网址时，安卓系统会弹出提示，选择对此网站的操作，选择用浏览器打开并勾选总是执行此操作，之后会自动在浏览器中打开链接；苹果系统则会弹出提示，点击即可用默认浏览器打开。如果安装了APP，会直接打开APP并将网址内的加密UID传递给APP。
 
