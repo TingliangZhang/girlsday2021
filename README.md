@@ -710,6 +710,17 @@ Debian的各种桌面环境参考：https://www.eet-china.com/mp/a10976.html
 
 
 
+Debian10第一次安装ssh：
+
+```bash
+sudo apt-get install ssh
+sudo systemctl restart ssh
+```
+
+之后可以配置公钥
+
+
+
 ## 域名备案相关
 
 总的来说：麻烦到爆炸
