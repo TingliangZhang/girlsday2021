@@ -140,10 +140,10 @@ KickStarter页面 [Fuze Card](https://www.indiegogo.com/projects/fuze-card-your-
 - [x] SSL证书（上https）
 - [x] 网站搭建
 - [x] PCB外观设计
-- [ ] 自动生成PCB脚本编写（集成bitmap2component）
+- [x] 自动生成PCB脚本编写（集成bitmap2component）
 - [x] 硬件原理调试
 - [x] UX和UI设计
-- [ ] 用户体验测试（大雾）
+- [x] 用户体验测试（大雾）
 - [x] SD卡大小Tag设计和测试，特别是V槽拼版
 - [ ] 加入墨水屏
 
@@ -1094,7 +1094,6 @@ https://www.proxmox.com/en/
 > Rufus is a more lightweight alternative, but you need to use the **DD mode** to make it work. Download Rufus from https://rufus.ie/. Either install it or use the portable version. Select the destination drive and the Proxmox VE ISO file.
 >
 > Once you *Start* you have to click *No* on the dialog asking to download a different version of GRUB. In the next dialog select the *DD* mode.
->
 
 插上去安装，按照提示安就好，最后通过https:// IP :8006 访问控制台。
 
