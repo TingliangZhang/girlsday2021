@@ -301,8 +301,10 @@ https://kbeckmann.github.io/2016/06/19/NFC-Antenna-Generator/
 
 Internal tuning capacitor in ST25DV04K SO8N(f = 13.56 MHz) $C_{TUN} = 28.5 pF$
 
-计算公式：$L_{A} C_{S} \omega^{2}=1$
-
+计算公式：
+$$
+L_{A} C_{S} \omega^{2}=1
+$$
 具体推导：
 $$
 L_{A}=\frac{1}{4 \pi^{2} f^{2} C_{S}}
